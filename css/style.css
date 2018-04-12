@@ -1,0 +1,106 @@
+body{
+	background-color: #e3e4e5;
+}
+
+#main-title{
+	padding-top: 2em;
+	padding-bottom: 1em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 80%;
+	text-align: center;
+	flex-wrap: nowrap;
+	background-color: #4d657c;
+}
+
+#navbar  div{
+	width: 100%;
+	border: solid;
+	border-width: 1px;
+	align-items: center;
+}
+
+#navbar a{
+	padding: 1em;
+	color: black;
+	text-decoration: none;
+	font-size: 1.4em;
+	color: #fefefe;
+}
+
+#navbar #arrows div{
+	padding: 1.4em;
+}
+
+#navbar #arrows{
+	display: flex;
+	border: none;
+}
+
+#navbar > div{
+	display: flex;
+	justify-content: space-around;
+}
+
+#site{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 80%;
+	background-color: #f4f6f9;
+	margin-bottom: 2em;
+	box-shadow: 0.05em 0.15em #aaaaaa;
+}
+
+#site #left-column{
+	width: 20%;
+}
+
+#site #content{
+	width: 80%;
+}
+
+#left-column  div{
+	border: solid;
+	border-width: 0.1px;
+	height: 15em;
+}
+
+#site #left-column div .title{
+	border: solid 1px;
+	height: 20%;
+	background-color: #fff6d8;
+}
+
+#site #left-column div .subtitle{
+	margin: 0;
+	padding: 0;
+	height: 80%;
+	border-left: solid 1px;
+	border-right: solid 1px;
+	border-bottom: solid 1px;
+	background-color: #c9d3e2;
+}
+
+#site #content a{
+	background-color: #fff6d8; 
+    border: solid 1px;
+    border-radius: 20px;
+    color: #000;
+    font-weight: bold;
+    padding: 1em 3em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4em;
+    width: 50%;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+}
