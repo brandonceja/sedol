@@ -107,6 +107,10 @@ body{
     margin-left: 8em;
 }
 
-#site #content h1{
+#site #content h1, button{
 	text-align: center;
+}
+
+#site #content #ej1{
+	display: none;
 }

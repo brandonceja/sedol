@@ -19,11 +19,29 @@
             \frac{dx_2}{dt}&amp;= g_2(t, x_1, x_2, \cdots, x_n)\\
             &amp;\hspace{4em} \vdots \\
             \frac{dx_n}{dt}&amp;= g_n(t, x_1, x_2, \cdots, x_n)\end{aligned}$$</span><br /> se denomina sistema de primer orden.</p>
-            <p>EJEMPLO</p>
-            <p>Este es un sistema de <span class="math inline">3</span> ecuaciones de <strong>primer orden</strong> <br /><span class="math display">$$\begin{aligned}
-            \frac{dx_1}{dt}= g_1(t, x_1, x_2, x_3)&amp;=t x_1 x_2 x_3\\
-            \frac{dx_2}{dt}= g_2(t, x_1, x_2, x_3)&amp;=t+ x_1+ x_2+ x_3\\
-            \frac{dx_3}{dt}= g_3(t, x_1, x_2, x_3)&amp;=\sin(t)+ x_2- 5x_3^2\end{aligned}$$</span><br /> se denomina sistema de primer orden ya las derivadas que aparecen son a lo mas de primer orden.</p>
+            <button id="btn-ej1">EJEMPLO</button>
+            <div id="ej1">
+               <p>Este es un sistema de <span class="math inline">3</span> ecuaciones de <strong>primer orden</strong> <br /><span class="math display">$$\begin{aligned}
+               \frac{dx_1}{dt}= g_1(t, x_1, x_2, x_3)&amp;=t x_1 x_2 x_3\\
+               \frac{dx_2}{dt}= g_2(t, x_1, x_2, x_3)&amp;=t+ x_1+ x_2+ x_3\\
+               \frac{dx_3}{dt}= g_3(t, x_1, x_2, x_3)&amp;=\sin(t)+ x_2- 5x_3^2\end{aligned}$$</span><br /> se denomina sistema de primer orden ya las derivadas que aparecen son a lo mas de primer orden.</p>
+            </div>
+            <!-- JAVASCRIPT TEST PLEASE DELETE-->
+            <script>
+               (function(){
+                     let flag = false;
+                     document.getElementById("btn-ej1").addEventListener("click", function(){
+                        if(!flag){
+                           document.getElementById("ej1").style.display = 'block';
+                           flag = true;
+                        }else{
+                           document.getElementById("ej1").style.display = 'none';
+                           flag = false;
+                        }
+                     });
+               })();
+            </script>
+            <!-- JAVASCRIPT TEST PLEASE DELETE-->
             <h3 id="sistemas-lineales-de-primer-orden">Sistemas lineales de primer orden:</h3>
             <p>Cuando cada una de las funciones <span class="math inline"><em>g</em><sub>1</sub>, <em>g</em><sub>2</sub>, …, <em>g</em><sub><em>n</em></sub></span> de la expresión es lineal sobre variables independientes <span class="math inline"><em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, …, <em>x</em><sub><em>n</em></sub></span>, obtenemos la forma normal de un sistema de primer orden de las ecuaciones lineales: <br /><span class="math display">$$\begin{aligned}
             \frac{dx_1}{dt}&amp;=a_{11}(t)x_1+a_{12}(t)x_2+\cdots+a_{1n}(t)x_n+f_1(t)\\
@@ -420,28 +438,32 @@
             4\\
             -1\\
             \end{bmatrix}\end{aligned}$$</span><br /></p>
-            <p>Equivalentemente la canciones son <span class="math inline"><em>x</em><sub>1</sub>(3)=4</span> y <span class="math inline"><em>x</em><sub>2</sub>(3)= − 1</span>. La solución se puede calcular mediante las siguientes lineas el SAGE</p>
-            <pre><code>A = matrix([[1, 2], [3, 4]])
-            t = var(&#39;t&#39;)
-            x_1 = function(&#39;x_1&#39;)(t)
-            x_2 = function(&#39;x_2&#39;)(t)
-            de1 = diff(x_1,t) == A[0,0]*x_1+A[0,1]*x_2
-            de2 = diff(x_2,t) == A[1,0]*x_1+A[1,1]*x_2
-            ics=[0,4 ,-1 ]
-            sol = desolve_system([de1, de2], [x_1,x_2],ics, ivar=t)
-            x1=sol[0].rhs()
-            x2=sol[1].rhs()
-            x11=sageobj(x1._maxima_().exponentialize())
-            x22=sageobj(x2._maxima_().exponentialize())
-            show(x11.maxima_methods().exponentialize().simplify_full())
-            show(x22.maxima_methods().exponentialize().simplify_full())
-            show(A.eigenvalues())
-            show(A.eigenvectors_right())
-            show(A.eigenvectors_left())
-            p=det(A-x*identity_matrix(2))
-            show(p)
-            show(p.expand())
-            show(solve(p==0,x))</code></pre>
+            <p>Equivalentemente la canciones son <span><em>x</em><sub>1</sub>(3)=4</span> y <span><em>x</em><sub>2</sub>(3)= − 1</span>. La solución se puede calcular mediante las siguientes lineas el SAGE</p>
+            <div class="compute">
+               <script type="text/x-sage">
+A = matrix([[1, 2], [3, 4]])
+t = var('t')
+x_1 = function('x_1')(t)
+x_2 = function('x_2')(t)
+de1 = diff(x_1,t) == A[0,0]*x_1+A[0,1]*x_2
+de2 = diff(x_2,t) == A[1,0]*x_1+A[1,1]*x_2
+ics=[0,4 ,-1 ]
+sol = desolve_system([de1, de2], [x_1,x_2],ics, ivar=t)
+x1=sol[0].rhs()
+x2=sol[1].rhs()
+x11=sageobj(x1._maxima_().exponentialize())
+x22=sageobj(x2._maxima_().exponentialize())
+show(x11.maxima_methods().exponentialize().simplify_full())
+show(x22.maxima_methods().exponentialize().simplify_full())
+show(A.eigenvalues())
+show(A.eigenvectors_right())
+show(A.eigenvectors_left())
+p=det(A-x*identity_matrix(2))
+show(p)
+show(p.expand())
+show(solve(p==0,x))
+               </script>
+            </div>
             <h3 id="existencia-de-una-solución-única">Existencia de una solución única</h3>
             <p>TEOREMA 1</p>
             <p>Existencia de una solución única</p>
