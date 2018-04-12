@@ -7,6 +7,7 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
 	<title>Sedol</title>
+	<!--agg-->
 	<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
     <script>$(function () {
