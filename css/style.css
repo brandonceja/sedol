@@ -107,10 +107,34 @@ body{
     margin-left: 8em;
 }
 
-#site #content h1, button{
+#site #content h1{
 	text-align: center;
 }
 
-#site #content #ej1{
+#site #content button, #site #content input:last-child{
+	background: #4d657c;
+	background-image: -webkit-linear-gradient(top, #4d657c, #4d657c);
+	background-image: -moz-linear-gradient(top, #4d657c, #4d657c);
+	background-image: -ms-linear-gradient(top, #4d657c, #4d657c);
+	background-image: -o-linear-gradient(top, #4d657c, #4d657c);
+	background-image: linear-gradient(to bottom, #4d657c, #4d657c);
+	-webkit-border-radius: 12;
+	-moz-border-radius: 12;
+	border-radius: 12px;
+	border-color: transparent;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	margin-left: 45%;
+	margin-bottom: 1em;
+}
+
+#site #content button:hover, #site #content input:last-child:hover {
+  background: #4c8ac4;
+  text-decoration: none;
+}
+
+#site #content .ej{
 	display: none;
 }
