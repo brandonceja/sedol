@@ -138,3 +138,9 @@ body{
 #site #content .ej{
 	display: none;
 }
+
+#site #content #next{
+	margin-top: 2em;
+	margin-left: 30em;
+	width: 15%;
+}
