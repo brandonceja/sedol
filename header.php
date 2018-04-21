@@ -2,8 +2,8 @@
 	<h1 id="main-title">Título del Curso</h1>
 </div>
 <div id="navbar">
-	<div><a href="#">Contenido</a></div>
-	<div><a href="#">Índice</a></div>
+	<div><a href="index.php">Contenido</a></div>
+	<div><a href="indice.php">Índice</a></div>
 	<div><a href="#">Presentación</a></div>
 	<div><a href="#">Recursos-SAGE</a></div>
 	<div id="arrows">

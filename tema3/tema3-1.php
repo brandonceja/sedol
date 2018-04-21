@@ -3,6 +3,9 @@
    echo '<link rel="stylesheet" href="../css/style.css">'
  ?>
 <body>
+  <?php     
+      include("../transition-column.php");
+   ?>
 <center>
     <?php 
       include("../header.php");

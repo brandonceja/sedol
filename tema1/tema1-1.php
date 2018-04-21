@@ -3,15 +3,18 @@
    echo '<link rel="stylesheet" href="../css/style.css">'
  ?>
 <body>
+   <?php     
+      include("../transition-column.php");
+   ?>
 <center>
     <?php 
       include("../header.php");
     ?>
     <div id="site">
-        <?php  
+         <?php  
                include("../column.php");
          ?>
-         <div id="content">
+            <div id="content">
             <h1>1.1 Teoría básica</h1>
             <h2>1.1.1 Definiciones preliminares</h2>
             <h3>Sistema de primer orden:</h3>

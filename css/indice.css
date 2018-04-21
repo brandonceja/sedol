@@ -1,0 +1,21 @@
+#content h3{
+	font-size: 2em;
+}
+
+#content h4{
+	font-size: 1.1em;
+}
+
+#content .subtitle{
+	padding-left: 2em;
+}
+
+#content .ss{
+	padding-left: 2em;
+}
+
+#content h2{
+	text-align: center;
+	font-size: 2.2em;
+	margin-bottom: 1em;
+}

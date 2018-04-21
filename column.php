@@ -4,7 +4,7 @@
 			<h3>1. Teoría básica</h3>
 		</div>
 		<div class="subtitle">
-		
+			
 		</div>
 	</div>
 	<div>

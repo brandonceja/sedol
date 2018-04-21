@@ -2,6 +2,9 @@
    include("head.php");
  ?>
 <body>
+	<?php 	 
+		include("transition-column.php");
+	?>
 	<center>
 		<div id="wrap">
 			<?php 
