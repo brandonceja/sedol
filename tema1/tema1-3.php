@@ -114,12 +114,15 @@
             e^{-5t}\\
             2e^{2t}
             \end{bmatrix}$$
-            <form action="./include/answers.inc.php" method="POST">
-              <input type="checkbox" name="answer5" value="a"> $\mathbf{x}_1(t)$<br>
-              <input type="checkbox" name="answer5" value="b"> $\mathbf{x}_2(t)$<br>
-              <input type="checkbox" name="answer5" value="c"> $\mathbf{x}_3(t)$<br><br>
-              <input type="submit" value="Revisar">
-            </form> 
+            <div>
+              <input type="checkbox" class="checks" value="a">  $\mathbf{x}_1(t)$<br>
+              <input type="checkbox" class="checks" value="b"> $\mathbf{x}_2(t)$<br>
+              <input type="checkbox" class="checks" value="c"> $\mathbf{x}_3(t)$<br><br>
+              <button id="ans1">Revisar</button>
+               <center>
+                  <h2 id="ansi1"></h2>
+               </center>
+            </div> 
             <h3>1.3.2. Problema de valor inicial</h3>
             <p><strong>Definición (Problema de valor inicial)</strong></p>
             <p>Si $t_0$ denota un punto en un intervalo $I$ y</p>
@@ -285,6 +288,22 @@
  <!-- Examples display-->
    <script>
       (function(){
+
+          function getValue(){
+            var checks = document.getElementsByClassName("checks");
+            if(!checks[0].checked && !checks[1].checked && checks[2].checked){
+               document.getElementById("ansi1").innerHTML = "¡Respuesta Correcta!";
+               document.getElementById("ansi1").style.color = "green";
+            }else{
+               document.getElementById("ansi1").innerHTML = "Intentalo de nuevo.";
+               document.getElementById("ansi1").style.color = "red";
+            }
+         }
+
+          document.getElementById("ans1").addEventListener("click",function(){
+            getValue();
+         });
+
          let buttons = ['btn-ej1', 'btn-ej2'];
          let examples = ['ej1', 'ej2'];
          let flags = [];

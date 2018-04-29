@@ -1,6 +1,6 @@
 <?php 
    include("../head.php");
-   echo '<link rel="stylesheet" href="../css/style.css">'
+   echo '<link rel="stylesheet" href="../css/style.css">';
  ?>
 <body>
    <?php     
@@ -290,13 +290,16 @@
                \frac{dx_3}{dt}=x_1+7x_2+\sin(t)x_3
                \end{aligned}$$
             </span></p>
-            <form action="./include/answers.inc.php" method="POST">
-              <input type="checkbox" name="answer1" value="a"> Es de primer orden.<br>
-              <input type="checkbox" name="answer1" value="b"> Es de lineal y de primer orden.<br>
-              <input type="checkbox" name="answer1" value="c"> Es homogéneo.<br>
-              <input type="checkbox" name="answer1" value="d"> Es de coeficientes constantes.<br><br>
-              <input type="submit" value="Revisar">
-            </form> 
+            <div>
+              <input type="checkbox" class="checks" value="a"> Es de primer orden.<br>
+              <input type="checkbox" class="checks" value="b"> Es de lineal y de primer orden.<br>
+              <input type="checkbox" class="checks" value="c"> Es homogéneo.<br>
+              <input type="checkbox" class="checks" value="d"> Es de coeficientes constantes.<br><br>
+              <button id="ans1">Revisar</button>
+               <center>
+                  <h2 id="ansi1"></h2>
+               </center>
+            </div> 
             <p><strong>Ejercicio 2</strong></p>
             <p>Dado el siguiente sistema de ecuaciones diferenciales, seleccione las opciones correctas. <br /><span>
             $$\begin{bmatrix}
@@ -321,13 +324,16 @@
             0\\
             1
             \end{bmatrix}$$</span><br /></p>
-            <form action="./include/answers.inc.php" method="POST">
-              <input type="checkbox" name="answer2" value="a"> Es de primer orden.<br>
-              <input type="checkbox" name="answer2" value="b"> Es de lineal y de primer orden.<br>
-              <input type="checkbox" name="answer2" value="c"> Es homogéneo.<br>
-              <input type="checkbox" name="answer2" value="d"> Es de coeficientes constantes.<br><br>
-              <input type="submit" value="Revisar">
-            </form> 
+            <div>
+              <input type="checkbox" class="checks2" value="a"> Es de primer orden.<br>
+              <input type="checkbox" class="checks2" value="b"> Es de lineal y de primer orden.<br>
+              <input type="checkbox" class="checks2" value="c"> Es homogéneo.<br>
+              <input type="checkbox" class="checks2" value="d"> Es de coeficientes constantes.<br><br>
+              <button id="ans2">Revisar</button>
+               <center>
+                  <h2 id="ansi2"></h2>
+               </center>
+            </div> 
             <p><strong>Ejercicio 3</strong></p>
             <p>Dado el siguiente sistema de ecuaciones diferenciales, seleccione las opciones correctas.</p>
             <p><span>
@@ -336,13 +342,16 @@
                \frac{dx_2}{dt} =3x_2+4x_1
                \end{aligned}
             </span></p>
-            <form action="./include/answers.inc.php" method="POST">
-              <input type="checkbox" name="answer3" value="a"> Es de primer orden.<br>
-              <input type="checkbox" name="answer3" value="b"> Es de lineal y de primer orden.<br>
-              <input type="checkbox" name="answer3" value="c"> Es homogéneo.<br>
-              <input type="checkbox" name="answer3" value="d"> Es de coeficientes constantes.<br><br>
-              <input type="submit" value="Revisar">
-            </form> 
+            <div>
+              <input type="checkbox" class="checks3" value="a"> Es de primer orden.<br>
+              <input type="checkbox" class="checks3" value="b"> Es de lineal y de primer orden.<br>
+              <input type="checkbox" class="checks3" value="c"> Es homogéneo.<br>
+              <input type="checkbox" class="checks3" value="d"> Es de coeficientes constantes.<br><br>
+              <button id="ans3">Revisar</button>
+               <center>
+                  <h2 id="ansi3"></h2>
+               </center>
+            </div> 
             <p>¿Cuál de las siguientes es su notación matricial? <br /><span>
             $$ a) \begin{bmatrix}
             x'_{1}\\
@@ -388,18 +397,79 @@
             0\\
             0
             \end{bmatrix}$$</span><br /></p>
-            <form action="./include/answers.inc.php" method="POST">
-              <input type="checkbox" name="answer4" value="a"> Opción a.<br>
-              <input type="checkbox" name="answer4" value="b"> Opción b.<br>
-              <input type="checkbox" name="answer4" value="c"> Opción c.<br>
-              <input type="submit" value="Revisar">
-            </form> 
+            <div>
+              <input type="checkbox" class="checks4" value="a"> Inciso a<br>
+              <input type="checkbox" class="checks4" value="b"> Inciso b<br>
+              <input type="checkbox" class="checks4" value="c"> Inciso c<br>
+              <button id="ans4">Revisar</button>
+               <center>
+                  <h2 id="ansi4"></h2>
+               </center>
+            </div> 
             <a href="tema1-3.php" id="next">Siguiente</a>
         </div>
    </center>
  <!-- Examples display-->
    <script>
       (function(){
+
+         function getValue(){
+            var checks = document.getElementsByClassName("checks");
+            if(checks[0].checked && checks[1].checked && checks[2].checked && !checks[3].checked){
+               document.getElementById("ansi1").innerHTML = "¡Respuesta Correcta!";
+               document.getElementById("ansi1").style.color = "green";
+            }else{
+               document.getElementById("ansi1").innerHTML = "Intentalo de nuevo.";
+               document.getElementById("ansi1").style.color = "red";
+            }
+         }
+
+         function getValue2(){
+            var checks = document.getElementsByClassName("checks2");
+            if(checks[0].checked && checks[1].checked && !checks[2].checked && !checks[3].checked){
+               document.getElementById("ansi2").innerHTML = "¡Respuesta Correcta!";
+               document.getElementById("ansi2").style.color = "green";
+            }else{
+               document.getElementById("ansi2").innerHTML = "Intentalo de nuevo.";
+               document.getElementById("ansi2").style.color = "red";
+            }
+         }
+
+         function getValue3(){
+            var checks = document.getElementsByClassName("checks3");
+            if(checks[0].checked && checks[1].checked && checks[2].checked && checks[3].checked){
+               document.getElementById("ansi3").innerHTML = "¡Respuesta Correcta!";
+               document.getElementById("ansi3").style.color = "green";
+            }else{
+               document.getElementById("ansi3").innerHTML = "Intentalo de nuevo.";
+               document.getElementById("ansi3").style.color = "red";
+            }
+         }
+
+         function getValue4(){
+            var checks = document.getElementsByClassName("checks4");
+            if(checks[0].checked && !checks[1].checked && !checks[2].checked){
+               document.getElementById("ansi4").innerHTML = "¡Respuesta Correcta!";
+               document.getElementById("ansi4").style.color = "green";
+            }else{
+               document.getElementById("ansi4").innerHTML = "Intentalo de nuevo.";
+               document.getElementById("ansi4").style.color = "red";
+            }
+         }
+
+         document.getElementById("ans1").addEventListener("click",function(){
+            getValue();
+         });
+         document.getElementById("ans2").addEventListener("click",function(){
+            getValue2();
+         });
+         document.getElementById("ans3").addEventListener("click",function(){
+            getValue3();
+         });
+         document.getElementById("ans4").addEventListener("click",function(){
+            getValue4();
+         });
+
          let buttons = ["btn-ej1","btn-ej2"];
          let examples = ["ej1","ej2"];
          let flags = [];
@@ -407,7 +477,7 @@
          buttons.forEach(function(e){
             flags.push(false);
          });
-
+          
          document.getElementById(buttons[0]).addEventListener("click", function(){
             checkStatus(0,flags[0], examples[0]);
          });
@@ -423,8 +493,9 @@
                document.getElementById(example).style.display = 'none';
                flags[id] = false;
             }
-         }
+         }   
       })();
+
    </script>
    <?php 
       include("../arrow.php");

@@ -295,3 +295,7 @@ body{
     color: #fff;
     top: 5px;
 }
+
+.answer{
+	visibility: hidden;
+}
