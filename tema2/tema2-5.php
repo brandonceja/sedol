@@ -11,9 +11,6 @@
       include("../header.php");
     ?>
     <div id="site">
-        <?php  
-               include("../column.php");
-         ?>
          <div id="content">
             <h1>2.4 Con multiplicidad</h1>
             <p>En esta sección se presenta el caso en que la ecuación característica</p>
@@ -85,5 +82,8 @@
           </div>
        </div>
    </center>
+   <?php 
+      include("../arrow.php");
+   ?>
    </body>
 </html>

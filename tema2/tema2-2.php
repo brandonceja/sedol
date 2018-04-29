@@ -11,9 +11,6 @@
       include("../header.php");
     ?>
     <div id="site">
-        <?php  
-               include("../column.php");
-         ?>
          <div id="content">
          	<h1>2.1 Método del eigenvalor para sistemas de <span>2 × 2</span></h1>
           <h2>2.1.1 Eigenvalores y eigenvectores</h2>

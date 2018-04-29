@@ -11,9 +11,6 @@
       include("../header.php");
     ?>
     <div id="site">
-        <?php  
-               include("../column.php");
-         ?>
          <div id="content">
             <h1>Teoría básica</h1>
             <h2>1.2. Forma matricial</h2>
@@ -429,5 +426,8 @@
          }
       })();
    </script>
+   <?php 
+      include("../arrow.php");
+   ?>
 </body>
 </html>

@@ -21,28 +21,41 @@
 						<div class="s">
 							<h4 id="s1.1" >1.1. Definiciones Preliminares</h4>
 							<div class="ss" id="ss1">
-								<h4>1.1.1 Sistemas de primer orden</h4>
-								<h4>1.1.2 Sistemas lineales de primer order</h4>
-								<h4>1.1.3 Sistemas lineales de primer order homogéneo</h4>
-								<h4>1.1.4 Sistemas lineales de primer order con coeficientes constantes</h4>
+								<h4>1.1.1. Sistemas de primer orden</h4>
+								<h4>1.1.2. Sistemas lineales de primer order</h4>
+								<h4>1.1.3. Sistemas lineales de primer order homogéneo</h4>
+								<h4>1.1.4. Sistemas lineales de primer order con coeficientes constantes</h4>
 							</div>
 						</div>
 						<div class="s" id="s1.2">
 							<h4>1.2. Forma Matricial</h4>
 							<div class="ss" id="ss2">
-								<h4>1.2.1 Representaciones matriciales de sistemas lineales con coeficientes constantes</h4>
-								<h4>1.2.2 Representaciones matriciales de sistemas lineales con coeficientes constantes</h4>
+								<h4>1.2.1. Representaciones matriciales de sistemas lineales</h4>
+								<h4>1.2.2. Representaciones matriciales de sistemas lineales con coeficientes constantes</h4>
 							</div>
 						</div>
 						<div class="s" id="s1.3">
 							<h4>1.3. Teoremas Básicos</h4>
 							<div class="ss" id="ss3">
-								<h4>1.3.1 Problema de valor inicial</h4>
-								<h4>1.3.2 Existencia de una solución única</h4>
-								<h4>1.3.3 Principio de superposición</h4>
-								<h4>1.3.4 Dependencia linea e independencia lineal</h4>
-								<h4>1.3.5 Criterio para soluciones linealmente independientes (Wronskiano)</h4>
-								<h4>1.3.6 Conjunto fundamental de soluciones y solución general</h4>
+								<h4>1.3.1. Solucion de sedol</h4>
+								<h4>1.3.2. Problema de valor inicial</h4>
+								<h4>1.3.3. Existencia de una solución única</h4>
+								<h4>1.3.4. Principio de superposición</h4>
+								<h4>1.3.5. Dependencia linea e independencia lineal</h4>
+								<h4>1.3.6. Criterio para soluciones linealmente independientes (Wronskiano)</h4>
+								<h4>1.3.7. Conjunto fundamental de soluciones y solución general</h4>
+							</div>
+						</div>
+						<div class="s" id="s1.4">
+							<h4>1.3. Teoremas Básicos</h4>
+							<div class="ss" id="ss4">
+								<h4>1.4.1. Gráfica de la soluciones <i>x(t)</i> y <i>y(t)</i> como funciones de <i>t</i></h4>
+								<h4>1.4.2. Gráfica de la trayectoria</h4>
+								<h4>1.4.3. Recorrido</h4>
+								<h4>1.4.4. Relación entre las gráficas de las soluciones, la trayectoria y el recorrido</h4>
+								<h4>1.4.5. Diagrama de fase</h4>
+								<h4>1.4.6. Diagrama de flujo</h4>
+								<h4>1.4.7. Relación entre el diagrama de flujo y el diagrama de fase</h4>
 							</div>
 						</div>
 					</div>

@@ -11,9 +11,6 @@
       include("../header.php");
     ?>
     <div id="site">
-        <?php  
-               include("../column.php");
-         ?>
          <div id="content">
             <h1>2.2 Reales distintos</h1>
             <p>Si los eigenvalores <span><em>λ</em><sub>1</sub>, <em>λ</em><sub>2</sub>, …, <em>λ</em><sub><em>n</em></sub></span> son reales y distintos, entonces se pueden obtener los eigenvectores asociados <span><strong>v</strong><sub>1</sub>, <strong>v</strong><sub>2</sub>, …, <strong>v</strong><sub><em>n</em></sub></span>. En este caso, puede demostrarse que los vectores de la solución particular dada por el siguiente método y son siempre linealmente independientes.</p>
@@ -27,5 +24,8 @@
             <a href="tema2-4.php" id="next">Siguiente</a>
         </div>
    </center>
+   <?php 
+      include("../arrow.php");
+   ?>
    </body>
 </html>

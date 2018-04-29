@@ -7,31 +7,16 @@
 	</div>
 	<div class="subtitle" id="s1">
 		<div class="s">
-			<h4 id="s1.1" >1.1. Definiciones Preliminares</h4>
-			<div class="ss" id="ss1">
-				<h4>1.1.1 Sistemas de primer orden</h4>
-				<h4>1.1.2 Sistemas lineales de primer order</h4>
-				<h4>1.1.3 Sistemas lineales de primer order homogéneo</h4>
-				<h4>1.1.4 Sistemas lineales de primer order con coeficientes constantes</h4>
-			</div>
+			<a href="http://www.sedolanton.com/tema1/tema1-1.php" id="s1.1" >1.1. Definiciones Preliminares</a>
 		</div>
 		<div class="s" id="s1.2">
-			<h4>1.2. Forma Matricial</h4>
-			<div class="ss" id="ss2">
-				<h4>1.2.1 Representaciones matriciales de sistemas lineales con coeficientes constantes</h4>
-				<h4>1.2.2 Representaciones matriciales de sistemas lineales con coeficientes constantes</h4>
-			</div>
+			<a href="http://www.sedolanton.com/tema1/tema1-2.php">1.2. Forma Matricial</a>
 		</div>
 		<div class="s" id="s1.3">
-			<h4>1.3. Teoremas Básicos</h4>
-			<div class="ss" id="ss3">
-				<h4>1.3.1 Problema de valor inicial</h4>
-				<h4>1.3.2 Existencia de una solución única</h4>
-				<h4>1.3.3 Principio de superposición</h4>
-				<h4>1.3.4 Dependencia linea e independencia lineal</h4>
-				<h4>1.3.5 Criterio para soluciones linealmente independientes (Wronskiano)</h4>
-				<h4>1.3.6 Conjunto fundamental de soluciones y solución general</h4>
-			</div>
+			<a href="http://www.sedolanton.com/tema1/tema1-3.php">1.3. Teoremas Básicos</a>
+		</div>
+		<div class="s" id="s1.3">
+			<a href="http://www.sedolanton.com/tema1/tema1-4.php">1.4. Representaciones gráficas, sistemas de 2x2.</a>
 		</div>
 	</div>
 	<div class="title" id="t2">
@@ -39,28 +24,16 @@
 	</div>
 	<div class="subtitle" id="s2">
 		<div class="s">
-			<h4 id="s2.1" >2.1. Eigenvalores y eigenvectores</h4>
-			<div class="ss" id="2ss1">
-
-			</div>
+			<a href="http://www.sedolanton.com/tema2/tema2-1.php" id="s2.1" >2.1. Eigenvalores y eigenvectores</a>
 		</div>
 		<div class="s" id="s2.2">
-			<h4>2.2. Reales distintos</h4>
-			<div class="ss" id="2ss2">
-
-			</div>
+			<a href="http://www.sedolanton.com/tema2/tema2-2.php">2.2. Reales distintos</a>
 		</div>
 		<div class="s" id="s2.3">
-			<h4>2.3. Complejos</h4>
-			<div class="ss" id="2ss3">
-
-			</div>
+			<a href="http://www.sedolanton.com/tema2/tema2-3.php">2.3. Complejos</a>
 		</div>
 		<div class="s" id="s2.4">
-			<h4>2.4. Con multiplicidad</h4>
-			<div class="ss" id="2ss4">
-
-			</div>
+			<a href="http://www.sedolanton.com/tema2/tema2-4.php">2.4. Con multiplicidad</a>
 		</div>
 	</div>
 	<div class="title">
@@ -73,7 +46,7 @@
 <script>
 	(function(){
 		let flags = [];
-		let subs = ['s1', 'ss1', 'ss2', 'ss3', 's2'];
+		let subs = ['s1', 's2'];
 
 		 subs.forEach(function(e){
             flags.push(false);
@@ -82,19 +55,9 @@
 		document.getElementById("t1").addEventListener("click", function(){
 			checkDisplay(flags[0], subs[0], 0);
 		});
-		document.getElementById("s1.1").addEventListener("click", function(){
+		document.getElementById("t2").addEventListener("click", function(){
 			checkDisplay(flags[1], subs[1], 1);
 		});
-		document.getElementById("s1.2").addEventListener("click", function(){
-			checkDisplay(flags[2], subs[2], 2);
-		});
-		document.getElementById("s1.3").addEventListener("click", function(){
-			checkDisplay(flags[3], subs[3], 3);
-		});
-		document.getElementById("t2").addEventListener("click", function(){
-			checkDisplay(flags[4], subs[4], 4);
-		});
-
 
 		function checkDisplay(flag, sub, id){
 			if(!flag){

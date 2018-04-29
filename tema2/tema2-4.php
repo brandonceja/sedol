@@ -11,9 +11,6 @@
       include("../header.php");
     ?>
     <div id="site">
-        <?php  
-               include("../column.php");
-         ?>
          <div id="content">          
             <h1>2.3 Complejos</h1>
             <p>Si algunos de los eigenvalores son complejos, con tal que sean distintos, el método descrito previamente obtiene de todas maneras <span><em>n</em></span> soluciones linealmente independientes. La única complicación es que los eigenvectores asociados con eigenvalores complejos son comúnmente complejos, de tal manera que se tendrán soluciones con valores complejos. Para obtener soluciones con valores reales, obsérvese que -debido a que se asume que la matriz <span><strong>A</strong></span> tiene sólo entradas reales- los coeficientes en la ecuación característica en serán todos reales. En consecuencia, cualesquiera eigenvalores complejos se presentarán en pares conjugados complejos. Supóngase entonces que <span><em>λ</em> = <em>p</em> + <em>q</em><em>i</em></span> y <span>$\bar{\lambda}=p-qi$</span> son un par de eigenvalores de este tipo.</p>
@@ -53,5 +50,8 @@
             <a href="tema2-5.php" id="next">Siguiente</a>
         </div>
    </center>
+   <?php 
+      include("../arrow.php");
+   ?>
    </body>
 </html>

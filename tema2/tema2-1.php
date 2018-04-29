@@ -11,9 +11,6 @@
       include("../header.php");
     ?>
     <div id="site">
-        <?php  
-               include("../column.php");
-         ?>
          <div id="content">
          	<h1>2.1 Método del eigenvalor para sistemas de <span>2 × 2</span></h1>
             <p>A continuación se introduce al método de valores propios para construir la solución general de un sistema lineal homogéneo de primer orden con coeficientes constantes de la forma</p>
@@ -61,5 +58,8 @@
             </div>
        </div>
    </center>
+   <?php 
+      include("../arrow.php");
+   ?>
    </body>
 </html>

@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
 	<title>Sedol</title>

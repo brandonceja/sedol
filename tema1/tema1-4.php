@@ -11,9 +11,6 @@
       include("../header.php");
     ?>
     <div id="site">
-        <?php  
-               include("../column.php");
-         ?>
          <div id="content">
             <h1>Teoría básica</h1>
             <h2>1.4. Representaciones gráficas, sistemas de 2x2.</h2>
@@ -276,5 +273,8 @@ dfp+dfn+dd+p
         </div>
        </div>
    </center>
+   <?php 
+      include("../arrow.php");
+   ?>
   </body>
 </html>
