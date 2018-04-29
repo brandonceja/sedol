@@ -15,11 +15,17 @@
                include("../column.php");
          ?>
          <div id="content">
-            <h1>1.1 Teoría básica</h1>
-            <h2>1.2 Forma matricial</h2>
-            <h3>1.2.1 Representaciones matriciales de sistemas lineales con coeficientes constantes</h3>
-            <p>Los símbolos <span><strong>x</strong></span>, <span><strong>x</strong><strong>′</strong></span>, <span><strong>A</strong>(<em>t</em>)</span> y <span><strong>F</strong>(<em>t</em>)</span> denotan las matrices respectivas</p>
-            <p><br /><span>
+            <h1>Teoría básica</h1>
+            <h2>1.2. Forma matricial</h2>
+            <h3>1.2.1. Representaciones matriciales de sistemas lineales</h3>
+            <p>Dado el sistemas lineal de primer orden en la forma normal:</p>
+            \begin{align*}
+            x'_1&=a_{11}(t)x_1+a_{12}(t)x_2+\cdots+a_{1n}(t)x_n+f_1(t)\\
+            x'_2&=a_{21}(t)x_1+a_{22}(t)x_2+\cdots+a_{2n}(t)x_n+f_2(t)\\
+            &\hspace{8em} \vdots \\
+            x'_n&=a_{n1}(t)x_1+a_{n2}(t)x_2+\cdots+a_{nn}(t)x_n+f_n(t)
+            \end{align*}
+            <p>Se puede denotar con los símbolos $\mathbf{x}$, $\mathbf{x'}$,  $\mathbf{A} (t)$ y $\mathbf{F}(t)$ las matrices siguientes:</p>
             $${\mathbf{x}}=
                \begin{bmatrix}
             x_{1}\\
@@ -47,82 +53,126 @@
             f_{2}(t)\\
             \vdots \\
             f_{n}(t)
-               \end{bmatrix}$$</span><br /></p>
-            <button id="btn-ej1">EJEMPLO 1</button>
-            <div id="ej5" class="ej">
-               <p>Aquí los símbolos <span><strong>x</strong></span>, <span><strong>x</strong><strong>′</strong></span>, <span><strong>A</strong>(<em>t</em>)</span> y <span><strong>F</strong>(<em>t</em>)</span> denotan lo siguiente:</p>
-               <p><br /><span>
-               $${\mathbf{x}}=
-                  \begin{bmatrix}
+            \end{bmatrix}$$<br/>
+            <p>Con esta notación, se puede escribir el sistema de ecuaciones diferenciales lineal y de primer orden como: </p>
+            \[
+               \begin{bmatrix}
+            x'_{1}\\
+            x'_{2}\\
+            \vdots \\
+            x'_{n}
+               \end{bmatrix}
+            =
+               \begin{bmatrix}
+            a_{11}(t)&a_{12}(t)&\cdots&a_{1n}(t)\\
+            a_{21}(t)&a_{22}(t)&\cdots&a_{2n}(t)\\
+            \vdots   &\vdots     &\ddots  & \vdots \\
+            a_{n1}(t)&a_{n2}(t)&\cdots&a_{nn}(t)
+               \end{bmatrix}
+               \begin{bmatrix}
+            x_{1}\\
+            x_{2}\\
+            \vdots \\
+            x_{n}
+               \end{bmatrix}
+               +
+               \begin{bmatrix}
+            f_{1}(t)\\
+            f_{2}(t)\\
+            \vdots \\
+            f_{n}(t)
+               \end{bmatrix}
+            \]
+            <p>O de forma abreviada</p>
+            $$ \mathbf{x'}=\mathbf{A} (t)\mathbf{x} +\mathbf{F}(t)$$
+            <p>la cual  es la forma matricial del sistema.  Esta notación es equivalente a la forma  normal, ya que si realizamos las siguientes  operaciones con las matrices</p>
+            \[
+            \begin{bmatrix}
+            x'_{1}\\
+            x'_{2}\\
+            \vdots \\
+            x'_{n}
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+            a_{11}(t)x_1+a_{12}(t)x_2+\cdots+a_{1n}(t)x_n\\
+            a_{21}(t)x_1+a_{22}(t)x_2+\cdots+a_{2n}(t)x_n\\
+            \hspace{2em} \vdots \\
+            a_{n1}(t)x_1+a_{n2}(t)x_2+\cdots+a_{nn}(t)x_n
+            \end{bmatrix}
+            +
+            \begin{bmatrix}
+            f_{1}(t)\\
+            f_{2}(t)\\
+            \vdots \\
+            f_{n}(t)
+            \end{bmatrix}
+            \]
+
+
+            \[
+            \begin{bmatrix}
+            x'_{1}\\
+            x'_{2}\\
+            \vdots \\
+            x'_{n}
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+            a_{11}(t)x_1+a_{12}(t)x_2+\cdots+a_{1n}(t)x_n+f_1(t)\\
+            a_{21}(t)x_1+a_{22}(t)x_2+\cdots+a_{2n}(t)x_n+f_2(t)\\
+            \hspace{-1em} \vdots \\
+            a_{n1}(t)x_1+a_{n2}(t)x_2+\cdots+a_{nn}(t)x_n+f_n(t)
+            \end{bmatrix}
+            \]
+            <p>se observa que son equivalentes  entrada con entrada. </p>
+            <button id="btn-ej1">EJEMPLO</button>
+            <div id="ej1" class="ej">
+               <p>Con esta notación el <i>sistema de ecuaciones diferenciales lineal y de primer orden</i></p>
+               \begin{align*}
+               x'_1&=3x_1+tx_2+5x_3+\exp(t)\\
+               x'_2&=x_1+x_2+x_3\\
+               x'_3&=\sin(t)x_1+7x_2+x_3+t^3\\
+               \end{align*}
+               <p>se puede expresar como  $ \mathbf{x'}=\mathbf{A} (t)\mathbf{x} +\mathbf{F}(t)$ haciendo</p> 
+               \[
+               \mathbf{x} =
+               \begin{bmatrix}
                x_{1}\\
                x_{2}\\
                x_{3}
-                  \end{bmatrix}
-                {\mathbf{x'}}=
-                  \begin{bmatrix}
+               \end{bmatrix}
+               \mathbf{x'} =
+               \begin{bmatrix}
                x'_{1}\\
                x'_{2}\\
                x'_{3}
-                  \end{bmatrix}
-                \mathbf{A}(t) =
-                  \begin{bmatrix}
-               3&amp;t&amp;5\\
-               1&amp;1&amp;1\\
-               \sin(t)&amp;7&amp;1
-                  \end{bmatrix}
-                \mathbf{F}(t) =
-                  \begin{bmatrix}
+               \end{bmatrix}
+               \mathbf{A}(t) =
+               \begin{bmatrix}
+               3&t&5\\
+               1&1&1\\
+               \sin(t)&7&1
+               \end{bmatrix}
+               \mathbf{F}(t) =
+               \begin{bmatrix}
                \exp(t)\\
                0\\
                t^3
-                  \end{bmatrix}$$</span><br /></p>
-               <p>con lo que se podrá denotar el sistema. <br /><span>
-               $$\begin{aligned}
-               x'_1&amp;=3x_1+tx_2+5x_3+\exp(t)\\
-               x'_2&amp;=x_1+x_2+x_3\\
-               x'_3&amp;=\sin(t)x_1+7x_2+x_3+t^3\\\end{aligned}$$</span><br /></p>
-               <p>Con esta notación, un <strong>sistema de ecuaciones diferenciales lineal y de primer orden</strong> se puede expresar como <br /><span>$$\begin{bmatrix}
-               x'_{1}\\
-               x'_{2}\\
-               \vdots \\
-               x'_{n}
-                  \end{bmatrix}
-               =
-                  \begin{bmatrix}
-               a_{11}(t)&amp;a_{12}(t)&amp;\cdots&amp;a_{1n}(t)\\
-               a_{21}(t)&amp;a_{22}(t)&amp;\cdots&amp;a_{2n}(t)\\
-               \vdots  &amp;\vdots     &amp;\ddots &amp; \vdots \\
-               a_{n1}(t)&amp;a_{n2}(t)&amp;\cdots&amp;a_{nn}(t)
-                  \end{bmatrix}
-                  \begin{bmatrix}
-               x_{1}\\
-               x_{2}\\
-               \vdots \\
-               x_{n}
-                  \end{bmatrix}
-                  +
-                  \begin{bmatrix}
-               f_{1}(t)\\
-               f_{2}(t)\\
-               \vdots \\
-               f_{n}(t)
-                  \end{bmatrix}$$</span><br /> O de forma abreviada <br /><center><span><strong>x</strong><strong>′</strong> = <strong>A</strong>(<em>t</em>)<strong>x</strong> + <strong>F</strong>(<em>t</em>)</span></center><br /> y respectivamente los otros tipos de sistemas.</p>
-            </div>
-            <button id="btn-ej2">EJEMPLO 2</button>
-            <div id="ej6" class="ej">
-               <p>Con esta notación el <strong>sistema de ecuaciones diferenciales lineal y de primer orden</strong> <br /><span>$$\begin{aligned}
-               x'_1&amp;=3x_1+tx_2+5x_3+\exp(t)\\
-               x'_2&amp;=x_1+x_2+x_3\\
-               x'_3&amp;=\sin(t)x_1+7x_2+x_3+t^3\\\end{aligned}$$</span><br /> se puede expresar como <br /><span>$$\begin{bmatrix}
+               \end{bmatrix}
+               \]
+               <p>el sistema queda como</p>
+               \[
+                   \begin{bmatrix}
                x'_{1}\\
                x'_{2}\\
                x'_{3}
                   \end{bmatrix}
                =
                   \begin{bmatrix}
-               3&amp;t&amp;5\\
-               1&amp;1&amp;1\\
-               \sin(t)&amp;7&amp;1
+               3&t&5\\
+               1&1&1\\
+               \sin(t)&7&1
                   \end{bmatrix}
                    \begin{bmatrix}
                x_{1}\\
@@ -134,11 +184,51 @@
                \exp(t)\\
                0\\
                t^3
-                  \end{bmatrix}$$</span><br /></p>
+                  \end{bmatrix}
+               \]
+               <p>Y si realizamos las operaciones  con las matrices</p>
+               \[
+               \begin{bmatrix}
+               x'_{1}\\
+               x'_{2}\\
+               x'_{3}
+               \end{bmatrix}
+               =
+               \begin{bmatrix}
+               3x_1+tx_2+5x_3\\
+               x_1+x_2+x_3\\
+               \sin(t)x_1+7x_2+x_3
+               \end{bmatrix}
+               +
+               \begin{bmatrix}
+               \exp(t)\\
+               0\\
+               t^3
+               \end{bmatrix}
+               \]
+               \[
+               \begin{bmatrix}
+               x'_{1}\\
+               x'_{2}\\
+               x'_{3}
+               \end{bmatrix}
+               =
+               \begin{bmatrix}
+               3x_1+tx_2+5x_3+\exp(t)\\
+               x_1+x_2+x_3\\
+               \sin(t)x_1+7x_2+x_3+t^3
+               \end{bmatrix}
+               \]
+               <p>Que es equivalente a la forma normal del inicio.</p>
             </div>
-            <h3>1.2.2 Representaciones matriciales de sistemas lineales con coeficientes constantes</h3>
-            <p>Sistema lineal homogéneo: <br /><center><span><strong>x</strong><strong>′</strong> = <strong>A</strong>(<em>t</em>)<strong>x</strong></span></center><br /> Sistema lineal homogéneo con coeficientes constantes: <br /><center><span><strong>x</strong><strong>′</strong> = <strong>A</strong><strong>x</strong></span></center><br /> que es equivalente a lo siguiente <br /><span>
-            $$\begin{bmatrix}
+            <h3>1.2.2. Representaciones matriciales de sistemas lineales con coeficientes constantes</h3>
+            <p>En la representación matricial de un  sistema lineal homogéneo  se tiene que $\mathbf{F}(t)=0$ y resulta:</p>
+            $$ \mathbf{x'}=\mathbf{A} (t)\mathbf{x}$$
+            <p>Si el sistema lineal homogéneo con coeficientes constantes su representación matricial es: </p>
+            $$ \mathbf{x'}=\mathbf{A} \mathbf{x}$$
+            <p>donde $\mathbf{A}$  es una matriz con entradas constantes dando la si siguiente forma equivalente:</p>
+            \[
+               \begin{bmatrix}
             x'_{1}\\
             x'_{2}\\
             \vdots \\
@@ -146,19 +236,20 @@
                \end{bmatrix}
             =
                \begin{bmatrix}
-            a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\\
-            a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\\
-            \vdots  &amp;\vdots     &amp;\ddots &amp; \vdots \\
-            a_{n1}&amp;a_{n2}&amp;\cdots&amp;a_{nn}
+            a_{11}&a_{12}&\cdots&a_{1n}\\
+            a_{21}&a_{22}&\cdots&a_{2n}\\
+            \vdots   &\vdots     &\ddots  & \vdots \\
+            a_{n1}&a_{n2}&\cdots&a_{nn}
                \end{bmatrix}
                \begin{bmatrix}
             x_{1}\\
             x_{2}\\
             \vdots \\
             x_{n}
-               \end{bmatrix}$$</span><br /></p>
-            <button id="btn-ej3">EJEMPLO</button>
-            <div id="ej7" class="ej">
+               \end{bmatrix}
+            \]
+            <button id="btn-ej2">EJEMPLO</button>
+            <div id="ej2" class="ej">
                <p>Sistema lineal homogéneo con coeficientes constantes: <br /><center><span><strong>x</strong><strong>′</strong> = <strong>A</strong><strong>x</strong></span><br /> </center><br /><span>$$\begin{bmatrix}
                x'_{1}\\
                x'_{2}\\
@@ -186,66 +277,13 @@
                x'_{2}\\
                x'_{3}
                   \end{bmatrix}
-                \mathbf{A}(t) =
+                \mathbf{A} =
                   \begin{bmatrix}
                2&amp;7&amp;8\\
                3&amp;6&amp;10\\
                4&amp;5&amp;\pi
                   \end{bmatrix}$$</span><br /></p>
             </div>
-            <p>DEFINICIÓN: Vector solución</p>
-            <p>En un intervalo <span><em>I</em></span>, un vector solución es cualquier matriz columna <br /><span>
-            $${\mathbf{x}}(t) =
-              \begin{bmatrix}
-            x_{1}(t)\\
-            x_{2}(t)\\
-            \vdots \\
-            x_{n}(t)
-               \end{bmatrix}$$</span><br /> cuyos elementos son funciones diferenciables que satisfacen, un sistema de ecuaciones diferenciales en el intervalo.</p>
-            <button id="btn-ej4">EJEMPLO</button>
-            <div id="ej8" class="ej">
-               <p>Dado el sistema <span><strong>x</strong><strong>′</strong> = <strong>A</strong><strong>x</strong></span> en su forma matricial <span>$
-                   \begin{bmatrix}
-               x'_{1}\\
-               x'_{2}
-                  \end{bmatrix}
-               =
-                  \begin{bmatrix}
-               4&amp;-3\\
-               6&amp;-7
-                  \end{bmatrix}
-                   \begin{bmatrix}
-               x_{1}\\
-               x_{2}
-                  \end{bmatrix}
-               $</span> veamos que <span>
-               ${\mathbf{x}}_1=\begin{bmatrix}
-               3e^{2t}\\
-               2e^{2t}
-                  \end{bmatrix}$</span> es solución. Basta notar que: <br /><span>
-                  $${\mathbf{x'}}_1=\begin{bmatrix}
-               \frac{d(3e^{2t})}{dt}\\
-               \frac{d(2e^{2t})}{dt}
-                  \end{bmatrix}=\begin{bmatrix}
-               6e^{2t}\\
-               4e^{2t}
-                  \end{bmatrix}$$</span><br /> Y que <br /><span>
-                     $${\mathbf{A}}{\mathbf{x}}_1=\begin{bmatrix}
-               4&amp;-3\\
-               6&amp;-7
-                  \end{bmatrix}
-                   \begin{bmatrix}
-               3e^{2t}\\
-               2e^{2t}
-                  \end{bmatrix}=\begin{bmatrix}
-               4(3e^{2t})-3(2e^{2t})\\
-               6(3e^{2t})-7(2e^{2t})
-                  \end{bmatrix}=\begin{bmatrix}
-               6e^{2t}\\
-               4e^{2t}
-                  \end{bmatrix}$$</span><br /> Así, <span><strong>x</strong><strong>′</strong><sub>1</sub> = <strong>A</strong><strong>x</strong><sub>1</sub></span> por lo tanto, <span><strong>x</strong><sub>1</sub></span> es una solución de <span><strong>x</strong><strong>′</strong> = <strong>A</strong><strong>x</strong></span>.</p>
-            </div>
-            <p>PONER EJEMPLO DE SOLUCIÓN DE UN SEDOL</p>
             <p><strong>Ejercicio 1</strong></p>
             <p>Dado el siguiente sistema de ecuaciones diferenciales, seleccione las opciones correctas.</p>
             <p><span>
@@ -296,10 +334,10 @@
             <p><strong>Ejercicio 3</strong></p>
             <p>Dado el siguiente sistema de ecuaciones diferenciales, seleccione las opciones correctas.</p>
             <p><span>
-               $$\begin{aligned}
-               $\frac{dx_1}{dt}=x_1+2x_2$ \\
-               $\frac{dx_2}{dt} =3x_2+4x_1$
-               \end{aligned}$$
+               \begin{aligned}
+               \frac{dx_1}{dt}=x_1+2x_2 \\
+               \frac{dx_2}{dt} =3x_2+4x_1
+               \end{aligned}
             </span></p>
             <form action="./include/answers.inc.php" method="POST">
               <input type="checkbox" name="answer3" value="a"> Es de primer orden.<br>
@@ -365,8 +403,8 @@
  <!-- Examples display-->
    <script>
       (function(){
-         let buttons = ["btn-ej1","btn-ej2","btn-ej3","btn-ej4"];
-         let examples = ["ej1","ej2","ej3","ej4"];
+         let buttons = ["btn-ej1","btn-ej2"];
+         let examples = ["ej1","ej2"];
          let flags = [];
 
          buttons.forEach(function(e){
@@ -378,12 +416,6 @@
          });
          document.getElementById(buttons[1]).addEventListener("click", function(){
             checkStatus(1,flags[1], examples[1]);
-         });
-         document.getElementById(buttons[2]).addEventListener("click", function(){
-            checkStatus(2,flags[2], examples[2]);
-         });
-         document.getElementById(buttons[3]).addEventListener("click", function(){
-            checkStatus(3,flags[3], examples[3]);
          });
 
          function checkStatus(id, flag, example){

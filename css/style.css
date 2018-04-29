@@ -211,3 +211,38 @@ body{
 	display: none;
 }
 
+.note{
+	margin-bottom: 1em;
+	margin-right: 2em;
+	margin-left: 2em;
+	border: solid 1px #4d657c;
+	border-radius: 16px;
+	padding: 0;
+	background-color: #4d657c;
+}
+
+.note .tnote{
+	margin: 0;
+	color: #fefefe;
+	padding-left: 1em;
+}
+
+.note .cnote{
+	padding-left: 2em;
+	padding-right: 1em;
+	background-color: white;
+	height: 100%;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	border-radius: 0px 0px 16px 16px;
+}
+
+.tab{
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.tab tr td{
+	border: 1px solid black;
+	padding: 0.4em;
+}
