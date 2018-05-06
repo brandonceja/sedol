@@ -100,7 +100,7 @@
                      \end{align*}
                   </div>
                </div>
-            </div>
+            </div><br>
             <a href="tema1-2.php" id="next">Siguiente</a>
          </div>
    </center>

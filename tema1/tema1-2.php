@@ -406,6 +406,7 @@
                   <h2 id="ansi4"></h2>
                </center>
             </div> 
+             <a href="tema1-1.php" id="ant">Anterior</a>
             <a href="tema1-3.php" id="next">Siguiente</a>
         </div>
    </center>

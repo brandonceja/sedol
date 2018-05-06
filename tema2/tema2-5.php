@@ -79,6 +79,7 @@
             Y por lo tanto la solución general es</p>
             <p><span><em>Y</em><sub><em>g</em></sub>(<em>t</em>)=<em>C</em><sub>1</sub><em>Y</em><sub>1</sub>(<em>t</em>)+<em>C</em><sub>2</sub><em>Y</em><sub>2</sub>(<em>t</em>)=<em>C</em><sub>1</sub><em>v</em><sub>1</sub><em>e</em><sup><em>λ</em><em>t</em></sup> + <em>C</em><sub>2</sub>(<em>v</em><sub>1</sub><em>t</em> + <em>v</em><sub>2</sub>)<em>e</em><sup><em>λ</em><em>t</em></sup></span><br />
             </p>
+            <a href="tema2-4.php" id="ant">Anterior</a>
           </div>
        </div>
    </center>

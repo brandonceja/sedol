@@ -47,6 +47,7 @@
             <p>asociadas a los eigenvalores conjugados complejos <span><em>p</em> ± <em>q</em><em>i</em></span>. Es fácil verificar que las mismas dos soluciones de valores reales resultan de tomar las partes real e imagina ria de <span>$\bar{{\mathbf{v}}} e^{\bar{\lambda} t}$</span>. Más que memorizar las fórmulas anteriores, es preferible, en un ejemplo específico, proceder de la siguiente manera:</p>
             <p>Encuéntrese primero, de manera explícita, una solución de valor complejo <span><strong>x</strong>(<em>t</em>)</span> asociada con el eigenvalor complejo <span><em>λ</em></span>;</p>
             <p>Posteriormente, obténganse las partes real e imaginaria <span><strong>x</strong><sub>1</sub>(<em>t</em>)</span> y <span><strong>x</strong><sub>2</sub>(<em>t</em>)</span> para conseguir dos soluciones de valores reales independientes, correspondientes a los dos eigenvalores complejos conjugados <span><em>λ</em></span> y <span>$\bar{\lambda}$</span>.</p>
+            <a href="tema2-3.php" id="ant">Anterior</a>
             <a href="tema2-5.php" id="next">Siguiente</a>
         </div>
    </center>

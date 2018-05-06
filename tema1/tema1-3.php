@@ -18,6 +18,7 @@
             <p>Una solución de un sistema  de ecuaciones diferenciales de $n$ variables es un conjunto de  $n$  funciones $x_1 (t), x_2 (t), \dots, x_n (t)$ que lo satisfacen en algún intervalo. Particularmente, si se trata de un sistema  de ecuaciones diferenciales lineal y homogéneo en la con forma matricial:</p>
             $$\mathbf{x'}=\mathbf{A} (t)\mathbf{x}$$
             <p>para realizar operaciones con matrices en necesario  escribir  una solución  como un vector, por lo que es necesaria la siguiente definición.</p>
+            <br><br><hr><br>
             <p><strong>Definición (Vector solución):</strong></p>
             <p>En un intervalo $I$, un vector solución es cualquier matriz columna</p>
             \[
@@ -30,6 +31,7 @@
             \end{bmatrix}
             \]
             <p>cuyos elementos son funciones diferenciables que satisfacen,  un sistema de ecuaciones diferenciales en el intervalo.</p>
+            <br><hr><br><br>
             <div class="note">
                   <div class="tnote">
                      <p>NOTA</p>
@@ -124,6 +126,7 @@
                </center>
             </div> 
             <h3>1.3.2. Problema de valor inicial</h3>
+            <br><br><hr><br>
             <p><strong>Definición (Problema de valor inicial)</strong></p>
             <p>Si $t_0$ denota un punto en un intervalo $I$ y</p>
             $$
@@ -210,22 +213,28 @@
                 5\\
               \end{bmatrix}$$
             </div>
+            <br><hr><br><br>
             <h3>1.3.3. Existencia de una solución única</h3>
+            <br><hr><br>
             <p><strong>Teorema (Existencia de una solución única)</strong></p>
             <p>Sean las entradas de las matrices $\mathbf{A}(t)$ y $\mathbf{F}(t)$ funciones continuas en un intervalo común $I$ que contienen el punto $t_0$. Entonces, existe una solución única para el problema de valor inicial en el intervalo.</p>
+            <br><hr><br><br>
             <h3>1.3.4. Principio de superposición</h3>
             <p>Sea $\mathbf{x}_1, \mathbf{x}_2, \dots , \mathbf{x}_k$ un conjunto de vectores solución del sistema homogéneo en un intervalo $I$. Entonces, la combinación lineal</p>
             $$c_1\mathbf{x}_1+c_2\mathbf{x}_2+ \dots+c_2\mathbf{x}_k$$
             <p>donde   $c_i , i = 1, 2, \dots , n$ son constantes arbitrarias, es también una solución en el intervalo.</p>
             <h3>1.3.5. Dependencia lineal e independencia lineal</h3>
             <p>Un sistema de ecuaciones diferenciales puede tener mas de un vector solución, estamos interesados principalmente en las soluciones del sistema homogéneo que sean linealmente independientes.</p>
+            <br><br><hr><br>
             <p><strong>Definición (Dependencia lineal e independencia lineal)</strong></p>
             <p>Sea $\mathbf{x}_1, \mathbf{x}_2, \dots , \mathbf{x}_k$ un sistema de vectores solución del sistema homogéneo en un intervalo $I$. Decimos que este conjunto es linealmente dependiente en el intervalo si existen constantes $c_1, c_2, \dots , c_k$ que no son todas cero, de tal forma que</p>
             $$c_1\mathbf{x}_1+c_2\mathbf{x}_2+ \dots+c_2\mathbf{x}_k=0$$
             <p>para toda $t$ en el intervalo. Si el conjunto de vectores no es linealmente dependiente en el intervalo, se dice que es linealmente independiente.</p>
             <p>Particularmente para el caso $k= 2$, dos vectores solución $\mathbf{x}_1$ y $\mathbf{x}_2$ son linealmente dependientes si un vector solución es un múltiplo escalar del otro. </p>
+            <br><hr><br><br>
             <h3>1.3.6. Criterio para soluciones linealmente independientes (Wronskiano)</h3>
             <p>En una consideración previa relacionada con la teoría de una sola ecuación diferencial ordinaria, pudimos introducir el concepto del determinante wronskiano como una prueba de la independencia lineal. Establecemos el teorema siguiente sin probarlo.</p>
+            <br><br><hr><br>
             <p><strong>Teorema (Criterio para soluciones linealmente independientes)</strong></p>
             Sean
             $
@@ -264,23 +273,30 @@
             \end{vmatrix}\neq 0
             \]
             <p>para toda $t$ incluida en el intervalo.</p>
+            <br><hr><br><br>
             <p>Es posible demostrar que si $\mathbf{x}_1, \mathbf{x}_2, \dots , \mathbf{x}_k$ son vectores solución de un sistema lineal, entonces para toda $t$ en $I$, bien $W(\mathbf{x}_1, \mathbf{x}_2, . . . , \mathbf{x}_n)\neq 0$  o $W(\mathbf{x}_1, \mathbf{x}_2, . . . , \mathbf{x}_n)=0$. Por lo tanto, si podemos demostrar que $W\neq 0$ para alguna $t_0$ en $I$, entonces $W\neq 0$ para toda $t$, de manera que el conjunto de soluciones es linealmente independiente en el intervalo. </p>
             <h3>1.3.7. Conjunto fundamental de soluciones y solución general</h3>
+            <br><br><hr><br>
             <p><strong>Definición (Conjunto fundamental de soluciones)</strong></p>
             <p>Todo conjunto ${\{\mathbf{x}_1, \mathbf{x}_2, \dots , \mathbf{x}_n\}}$ de $n$ vectores solución linealmente independientes del sistema homogéneo en un intervalo $I$ se denomina conjunto fundamental de soluciones en el intervalo.</p>
+
+            <br><br><hr><br>
             <p><strong>Teorema (Existencia de un conjunto fundamental.)</strong></p>
             <p>Existe un conjunto fundamental de soluciones para el sistema homogéneo en un intervalo $I$.</p>
+            <br><br><hr><br>
             <p><strong>Teorema (Solución general de sistemas homogéneos)</strong></p>
             <p>Sea $\mathbf{x}_1, \mathbf{x}_2, \dots , \mathbf{x}_n$ un conjunto fundamental de soluciones del sistema homogéneo en un intervalo $I$. Por lo tanto, la solución general del sistema en el intervalo es</p>
             $$\mathbf{x}(t)=c_1\mathbf{x}_1+c_2\mathbf{x}_2+ \dots+c_2\mathbf{x}_k$$
             <p>donde $c_i , i =1, 2,\dots , n$ son constantes arbitrarias.</p>
             <p>Sistemas no homogéneos Para los sistemas no homogéneos, una solución particular $\mathbf{x}_p$ en un intervalo $I$ es cualquier vector, libre de parámetros arbitrarios, cuyos elementos son funciones que satisfacen el sistema.</p>
+            <br><br><hr><br>
             <p><strong>Teorema (Solución general de sistemas no homogéneos.)</strong></p>
             <p>Sean $\mathbf{x}_p$ una solución dada del sistema no homogéneo en un intervalo $I$, y</p>
             $$\mathbf{x}_c=c_1\mathbf{x}_1+c_2\mathbf{x}_2+ \dots+c_2\mathbf{x}_k$$
             <p>denote la solución general en el mismo intervalo del sistema homogéneo asociado (5). Luego, la solución general del sistema no homogéneo en el intervalo es</p>
             $$\mathbf{x}(t)=\mathbf{x}_c+\mathbf{x}_p$$
             <p>La solución general $\mathbf{x}_c$ del sistema homogéneo  se denomina función complementaria del sistema no homogéneo.</p>
+            <a href="tema1-2.php" id="ant">Anterior</a>
             <a href="tema1-4.php" id="next">Siguiente</a>
           </div>
        </div>

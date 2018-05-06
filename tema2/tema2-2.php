@@ -23,6 +23,7 @@
             <p>Si <span><strong>v</strong></span> es un eigenvector asociado de <span><em>λ</em></span>, entonces</p>
             <p><br /><span><strong>x</strong>(<em>t</em>)=<strong>v</strong><em>e</em><sup><em>λ</em><em>t</em></sup></span><br /></p>
             <p>es una solución no trivial del sistema.</p>
+            <a href="tema2-1.php" id="ant">Anterior</a>
             <a href="tema2-3.php" id="next">Siguiente</a>
              </div>
    </center>

@@ -15,6 +15,7 @@
             <h1>Teoría básica</h1>
             <h2>1.4. Representaciones gráficas, sistemas de 2x2.</h2>
             <p>Se pueden obtener diferentes representaciones gráficas sobre las soluciones, estas representaciones  nos pueden brindar información acerca de algunas características que tendrían las soluciones,  para esto se introducen las siguientes definiciones.</p>
+            <br><br><hr><br>
             <p><strong>Definiciones:</strong></p>
             <p>Consideremos el sistema lineal  escrito en la forma </p>
             \begin{align*}
@@ -32,9 +33,10 @@
               <p>donde $I$ es un intervalo de existencia que entrega el teorema de existencia y unicidad para este tipo de sistemas.</p>
               <li>Se llama <i>recorrido</i> $R$ de esta trayectoria al conjunto imagen o recorrido de la función $\tau$, es decir:</li>
               $$R =\{ (x(t), y(t)) \in \mathbb{R}^2 | t \in I \} $$
-              <li>\item Se denomina <i>diagrama de fases</i> de este sistema a una colección de recorridos de las trayectorias para un número representativo de condiciones iniciales.</li>
-              <li>\item Se denomina <i>diagrama de flujo</i> al campo que se construye al graficar en una colección de puntos $(x,y)$ representativos el vector $(F(x, y),G(x,y))$</li>
+              <li>Se denomina <i>diagrama de fases</i> de este sistema a una colección de recorridos de las trayectorias para un número representativo de condiciones iniciales.</li>
+              <li>Se denomina <i>diagrama de flujo</i> al campo que se construye al graficar en una colección de puntos $(x,y)$ representativos el vector $(F(x, y),G(x,y))$</li>
             </ul>
+            <br><hr><br><br>
             <p>Para obtener  estas representaciones gráficas nos auxiliaremos en un software matemático  llamado SAGE que  permite evaluar lineas de comandos dentro de esta misma pagina web, las lineas están predeterminadas para seguir los ejemplos que veremos pero se pueden modificar para obtener  representaciones gráficas de otros casos, lo que se escribe despues del símbolo $\#$ son comentarios que SAGE no se evalúa al ejecutarse.</p>
             <p>Para ejemplificar consideremos el siguiente  sistema lineal</p>
             \begin{align*}
@@ -270,6 +272,7 @@ dd = plot_vector_field(F_unit, (x,-4,4), (y,-4,4), axes_labels=['$x(t)$','$y(t)$
 dfp+dfn+dd+p
                  </script>
           </div>
+          <a href="tema1-3.php" id="ant">Anterior</a>
         </div>
        </div>
    </center>

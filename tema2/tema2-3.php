@@ -21,6 +21,7 @@
             \dots,\hspace{2em}
             {\mathbf{x}}_n (t) = {\mathbf{v}}_n e\lambda_n t$$</span><br /></p>
             <p>En este caso, la solución general de <span><strong>x</strong> = <strong>A</strong><strong>x</strong></span> es una combinación lineal <br /><span><strong>x</strong><sub>(</sub><em>t</em>)=<em>c</em><sub>1</sub><strong>x</strong><sub>1</sub>(<em>t</em>)+<em>c</em><sub>2</sub><strong>x</strong><sub>2</sub>(<em>t</em>)+…+<em>c</em><sub><em>n</em></sub><strong>x</strong><sub><em>n</em></sub>(<em>t</em>)</span><br /> de estas <span><em>n</em></span> soluciones.</p>
+            <a href="tema2-2.php" id="ant">Anterior</a>
             <a href="tema2-4.php" id="next">Siguiente</a>
         </div>
    </center>

@@ -6,7 +6,14 @@
 	<link rel="stylesheet" href="css/fontawesome.min.css">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		MathJax.Hub.Config({
+  			tex2jax: {
+    		inlineMath: [['$','$'], ['\\(','\\)']],
+    		processEscapes: true
+  			}
+		});
+      </script>
 	<title>Sedol</title>
 	<!--agg-->
 	<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>

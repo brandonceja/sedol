@@ -34,15 +34,6 @@ body{
 	color: #fefefe;
 }
 
-#navbar #arrows div{
-	padding: 1.4em;
-}
-
-#navbar #arrows{
-	display: flex;
-	border: none;
-}
-
 #navbar > div{
 	display: flex;
 	justify-content: space-around;
@@ -139,10 +130,16 @@ body{
 	display: none;
 }
 
+#site #content #ant{
+	width: 15%;
+	display: inline-block;
+}
+
 #site #content #next{
 	margin-top: 2em;
-	margin-left: 30em;
+	margin-left: 5em;
 	width: 15%;
+	display: inline-block;
 }
 
 .menu-l {
@@ -181,12 +178,17 @@ body{
 	margin: 0;
 	padding-left: 2em;
 	padding-top: 0.05em;
+	padding-bottom: 1em;
 	height: 5%;
 }
 
 #transition-column .s{
-	margin: 0;
+	margin: 1em;
 	height: 5%;
+}
+
+#transition-column .s a{
+	padding-left: 2em;
 }
 
 #transition-column .title:hover{
@@ -194,13 +196,6 @@ body{
 }
 
 #transition-column .subtitle{
-	display: none;
-	padding-left: 3em;
-	padding-right: 1em;
-}
-
-#transition-column .subtitle .ss{
-	padding-left: 1em;
 	display: none;
 }
 
@@ -298,4 +293,10 @@ body{
 
 .answer{
 	visibility: hidden;
+}
+
+@media screen and (max-width: 1100px){
+	#navbar a{
+		font-size: 1em;
+	}
 }
