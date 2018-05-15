@@ -300,3 +300,19 @@ body{
 		font-size: 1em;
 	}
 }
+
+table tr th, table tr td{
+	border: solid 1px #4d657c;
+	text-align: center;
+	padding: 1em;
+	background-color: #fff;
+}
+
+table{
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+option{
+	margin: 2em;
+}
