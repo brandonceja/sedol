@@ -541,41 +541,45 @@ P.show(frame=True,axes_labels=['$x(t)$','$y(t)$'] , xmax = ejes, xmin = -ejes, y
                                                   4  \end{bmatrix}
 \end{align*}
 <center>
-  <select name="" id="">
+  <select name="one" id="o1">
     <option value="A">A</option>
     <option value="B">B</option>
     <option value="C">C</option>
     <option value="D">D</option>
-    <option value="-">Ninguno</option>
+    <option value="none">Ninguno</option>
   </select>
-  <select name="" id="">
+  <select name="two" id="o2">
     <option value="A">A</option>
     <option value="B">B</option>
     <option value="C">C</option>
     <option value="D">D</option>
-    <option value="-">Ninguno</option>
+    <option value="none">Ninguno</option>
   </select>
-  <select name="" id="">
+  <select name="three" id="o3">
     <option value="A">A</option>
     <option value="B">B</option>
     <option value="C">C</option>
     <option value="D">D</option>
-    <option value="-">Ninguno</option>
+    <option value="none">Ninguno</option>
   </select>
-  <select name="" id="">
+  <select name="four" id="o4">
     <option value="A">A</option>
     <option value="B">B</option>
     <option value="C">C</option>
     <option value="D">D</option>
-    <option value="-">Ninguno</option>
+    <option value="none">Ninguno</option>
   </select>
-  <select name="" id="">
+  <select name="five" id="o5">
     <option value="A">A</option>
     <option value="B">B</option>
     <option value="C">C</option>
     <option value="D">D</option>
-    <option value="-">Ninguno</option>
+    <option value="none">Ninguno</option>
   </select><br><br>
+</center>
+<button id="ans">Revisar</button>
+<center>
+     <h2 id="ansi"></h2>
 </center>
           <br><hr><br><br>
           <h2>Actividad 2</h2>
@@ -676,6 +680,36 @@ P.show(frame=True,axes_labels=['$x(t)$','$y(t)$'] , xmax = ejes, xmin = -ejes, y
           <a href="tema2-2.php" id="ant">Anterior</a>
           <a href="tema2-4.php" id="next">Siguiente</a>
         </div>
+      <script>
+     (function(){
+
+      document.getElementById("ans").addEventListener("click", function(){
+        var o1 = document.getElementById("o1");
+        var o1val = o1.options[o1.selectedIndex].value;
+        var o2 = document.getElementById("o2");
+        var o2val = o2.options[o2.selectedIndex].value;
+        var o3 = document.getElementById("o3");
+        var o3val = o3.options[o3.selectedIndex].value;
+        var o4 = document.getElementById("o4");
+        var o4val = o4.options[o4.selectedIndex].value;
+        var o5 = document.getElementById("o5");
+        var o5val = o5.options[o5.selectedIndex].value;
+        console.log(o1val);
+        console.log(o2val);
+        console.log(o3val);
+        console.log(o4val);
+        console.log(o5val);
+
+        if(o1val == "C" && o2val == "B" && o3val == "A" && o4val == "none" && o5val == "D"){
+          document.getElementById("ansi").innerHTML = "¡Respuesta Correcta!";
+          document.getElementById("ansi").style.color = "green";
+        }else{
+          document.getElementById("ansi").innerHTML = "Intentalo de nuevo.";
+          document.getElementById("ansi").style.color = "red";
+        }
+      });
+     })();
+   </script>
    </center>
    <?php 
       include("../arrow.php");
