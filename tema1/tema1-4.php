@@ -15,7 +15,6 @@
             <h1>Teoría básica</h1>
             <h2>1.4. Representaciones gráficas, sistemas de 2x2.</h2>
             <p>Se pueden obtener diferentes representaciones gráficas sobre las soluciones, estas representaciones  nos pueden brindar información acerca de algunas características que tendrían las soluciones,  para esto se introducen las siguientes definiciones.</p>
-            <br><br><hr><br>
             <p><strong>Definiciones:</strong></p>
             <p>Consideremos el sistema lineal  escrito en la forma </p>
             \begin{align*}
@@ -48,6 +47,7 @@
             x(t) &=e^t(\cos(2t)+\sin(2t))\\
             y(t) &=e^t(\cos(2t)-\sin(2t))
             \end{align*}
+            <a id="page--id--1-4-1"></a>
             <h3>1.4.1. Gráfica de la soluciones $x(t)$ y $y(t)$ como funciones de $t$.</h3>
             <p>Una primera representación gráfica que podemos tener sobre las soluciones de este sistema es gratificando de forma habitual las funciones $x(t)$ y $y(t)$.</p>
             <p>Para obtener la gráfica de $x(t)$ se pueden introducir  las siguientes lineas </p>
@@ -79,6 +79,8 @@ ygraf=plot(y(t), (t, 0, 5), color ='blue', legend_label='$y(t)$', legend_color='
 xgraf+ygraf
                  </script>
             </div>
+            <br><hr><br><br>
+            <a id="page--id--1-4-2"></a>
             <h3>1.4.2 Gráfica de la trayectoria.</h3>
             <p>En este caso la trayectoria que parte desde $(x_0,y_0)=(1,1)$ es la función $\tau : \mathbb{R}\rightarrow \mathbb{R}^2$ dada por</p>
             $$\tau(t)=(e^t(\cos(2t)+\sin(2t)), e^t(\cos(2t)-\sin(2t)))$$
@@ -95,6 +97,8 @@ graf=parametric_plot3d((t, x(t), y(t)), (t,0,5),color='purple',thickness=5) #Gr�
 set_axes_labels(graf, 't', 'x', 'y')
                  </script>
             </div>
+            <br><hr><br><br>
+            <a id="page--id--1-4-3"></a>
             <h3>1.4.3. Recorrido</h3>
             <p>Obsérvese  que la gráfica de la función $x(t)$ se hace en el plano tx, las de $y(t)$ se hacen en el plano ty y la trayectoria es una representación en el espacio txy. La gracia del recorrido $R$  de la trayectoria esta contenido en el plano xy, en este caso el conjunto de puntos dados por </p>
             $$(e^t(cos(2t)+sin(2t)), e^t(cos(2t)-sin(2t)))$$
@@ -106,6 +110,8 @@ y(t)=e^t*(cos(2*t)-sin(2*t))
 parametric_plot((x(t), y(t)), (t,0,5),axes_labels=['$x(t)$', '$y(t)$'],color='green',thickness=3)
                  </script>
             </div>
+            <br><hr><br><br>
+            <a id="page--id--1-4-4"></a>
             <h3>1.4.4. Relación entre las gráficas de las  soluciones, la trayectoria y el recorrido.</h3>
             <p>La forma en que se relacionan la gráfica de la trayectoria  $\tau(t)$, las gráficas de individuales de  $x(t)$ y $y(t)$  y el el recorrido $R$ es que la gráficas individuales son proyecciones de la gráfica  de la trayectoria sobre el plano tx y ty respectivamente, y la proyección de la trayectoria sobre el plano xy es el recorrido $R$ como se ilustra a continuación.</p>
             <div class="compute">
@@ -163,6 +169,8 @@ G.show(zoom=1.5)
                  </script>
             </div>
             <p>Una vez ejecutado se puede  manipular la posición de la gráfica final de la trayectoria para  hacer notar que condicen con las proyecciones de las gráficas de $x(t)$, $y(t)$ y del recorrido $R$.</p>
+            <br><hr><br><br>
+            <a id="page--id--1-4-5"></a>
             <h3>1.4.5. Diagrama de fase</h3>
             <p>Por otro lado, el diagrama de fases de este sistema se puede obtener graficando una colección de recorridos de las trayectorias para un número representativo de condiciones iniciales. Por ejemplo se pueden graficar los recorridos correspondientes a las condiciones iniciales $(t_0,x_0,y_0)$ dadas por  $(0,1,1)$, $(3,2,1)$, $(0,1,-1)$, $(0,-1,1)$ y $(0,-1,-1)$ mediante las siguientes lineas en SAGE.</p>
             <div class="compute">
@@ -184,6 +192,8 @@ P = point(([j,k] for i,j,k in VI), color='red',size=30,zorder=4)
 (dfp+dfn+P).show(frame=True, title='$Diagrama\ de\ Fase\ y\ Diagrama\ de\ Flujo$',axes_labels=['$x(t)$','$y(t)$'], xmax = ejes, xmin = -ejes, ymax = ejes, ymin = -ejes, aspect_ratio=1)
                   </script>
             </div>
+            <br><hr><br><br>
+            <a id="page--id--1-4-6"></a>
             <h3>1.4.6. Diagrama de flujo.</h3>
             <p>Siguiendo con el ejemplo,  para obtener una representación gráfica del diagrama de flujo sobre  cada punto $(x,y)$ se coloca un vector  con la dirección  que  describe $(F(x, y),G(x,y))$, en este caso  a  cada punto $(x,y)$ se relaciona con la dirección del vector $(x + 2y, -2x + y)$. Mediante el software SAGE se puede obtener el diagrama de flujo mediten las siguientes lineas</p>
             <div class="compute">
@@ -241,6 +251,8 @@ dd.show(frame=True, title='$Diagrama\ de\ Flujo$',axes_labels=['$x(t)$','$y(t)$'
             <img src="../img/diaDire3.png" alt="">
             <p>Figura 1.3:</p>
           </center>
+          <br><hr><br><br>
+          <a id="page--id--1-4-7"></a>
           <h3>1.4.7. Relación entre el diagrama de flujo y el diagrama de fase.</h3>
           <p>Finalmente, con respecto a la relación entre el diagrama de fase y  el diagrama de flujo, notemos que por regla de la cadena:</p>
           $$\frac{dy}{dt}=\frac{dy}{dx}\frac{dx}{dt}$$
@@ -272,7 +284,7 @@ dd = plot_vector_field(F_unit, (x,-4,4), (y,-4,4), axes_labels=['$x(t)$','$y(t)$
 dfp+dfn+dd+p
                  </script>
           </div>
-          <a href="tema1-3.php" id="ant">Anterior</a>
+          <a href="tema1-3.php" id="ant">&#8249;</a>
         </div>
        </div>
    </center>

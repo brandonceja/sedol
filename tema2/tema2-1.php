@@ -110,7 +110,7 @@
           <p>Para responder, notemos que dado $\lambda$,  $(\mathbf{A} - \lambda \mathbf{I} )\mathbf{v}=0$ es un sistema de $n$ ecuaciones lineales homogéneas en las incógnitas $v_1, v_2,\dots, v_n$ el cual tiene una solución no trivial <strong>si y sólo si</strong> el determinante de su matriz de coeficientes se anula; esto es</p>
           $$det(\mathbf{A} - \lambda \mathbf{I})=|\mathbf{A}-\lambda \mathbf{I}| = 0$$
           <p>Considerando todo lo anterior,  resolver el sistema $\mathbf{x'}=\mathbf{A}\mathbf{x}$  por el método de valores propios consiste en encontrar un valor de $\lambda$ tal que la ecuación $|\mathbf{A}-\lambda \mathbf{I}| = 0$ se cumpla, y posteriormente resolver la ecuación $(\mathbf{A} - \lambda \mathbf{I})\mathbf{v} = 0$ con este valor de $\lambda$ para obtener $v_1, v_2,\dots, v_n$ y entonces $\mathbf{x}(t)=\mathbf{v} e^{\lambda t}$  será <strong>un</strong> vector solución. El nombre del método proviene de la siguiente definición.</p>
-        <a href="tema2-2.php" id="next">Siguiente</a>    
+        <a href="tema2-2.php" id="next">&#8250;</a>   
       </div>
    </center>
    <?php 

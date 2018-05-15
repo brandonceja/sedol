@@ -267,8 +267,10 @@
             cv_1 + (d -\lambda)v_2&=0\\
             \end{align*}
             <p>La solución de este sistema algebraico que determina el vector  propio $\mathbf{v}=\begin{bmatrix}v_1\\v_2\end{bmatrix}$  se ejemplificara adelante en el proceso de resolución del sistema de ecuaciones diferenciales. </p>  
-            <a href="tema2-1.php" id="ant">Anterior</a>
-            <a href="tema2-3.php" id="next">Siguiente</a>
+            <div id="change">
+              <a href="tema2-1.php" id="ant">&#8249;</a>
+              <a href="tema2-3.php" id="next">&#8250;</a>
+            </div>
           </div>
    </center>
    <?php 

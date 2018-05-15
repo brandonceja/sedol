@@ -653,8 +653,10 @@ P.show(frame=True,axes_labels=['$x(t)$','$y(t)$'] , xmax = ejes, xmin = -ejes, y
               <li>¿Hacia donde tienden las funciones solución para cada una de las condiciones iniciales?</li><br><br>
               <li>Usando la celda SAGE anterior ¿Cómo son los diagramas de fase para los sistemas de la <strong>Actividad 1</strong>?</li>
             </ol>
-            <a href="tema2-3.php" id="ant">Anterior</a>
-           <a href="tema2-5.php" id="next">Siguiente</a>
+            <div id="change">
+              <a href="tema2-3.php" id="ant">&#8249;</a>
+              <a href="tema2-5.php" id="next">&#8250;</a>
+            </div>
           </div>
    </center>
    <script>

@@ -14,6 +14,7 @@
          <div id="content">
             <h1>Teoría básica</h1>
             <h2>1.2. Forma matricial</h2>
+            <a id="page--id--1-2-1"></a>
             <h3>1.2.1. Representaciones matriciales de sistemas lineales</h3>
             <p>Dado el sistemas lineal de primer orden en la forma normal:</p>
             \begin{align*}
@@ -218,6 +219,7 @@
                \]
                <p>Que es equivalente a la forma normal del inicio.</p>
             </div>
+            <a id="page--id--1-2-2"></a>
             <h3>1.2.2. Representaciones matriciales de sistemas lineales con coeficientes constantes</h3>
             <p>En la representación matricial de un  sistema lineal homogéneo  se tiene que $\mathbf{F}(t)=0$ y resulta:</p>
             $$ \mathbf{x'}=\mathbf{A} (t)\mathbf{x}$$
@@ -406,8 +408,10 @@
                   <h2 id="ansi4"></h2>
                </center>
             </div> 
-             <a href="tema1-1.php" id="ant">Anterior</a>
-            <a href="tema1-3.php" id="next">Siguiente</a>
+            <div id="change">
+                <a href="tema1-1.php" id="ant">&#8249;</a>
+               <a href="tema1-3.php" id="next">&#8250;</a>
+            </div>
         </div>
    </center>
  <!-- Examples display-->

@@ -3,10 +3,11 @@ body{
 }
 
 #main-title{
-	padding-top: 2em;
-	padding-bottom: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 	text-align: center;
 	text-transform: uppercase;
+	font-size: 1.4em;
 }
 
 #navbar{
@@ -80,7 +81,7 @@ body{
 	background-color: #c9d3e2;
 }
 
-#site #content a{
+#site #content .main{
 	background-color: #fff6d8; 
     border: solid 1px;
     border-radius: 20px;
@@ -90,7 +91,7 @@ body{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.4em;
+    font-size: 1.1em;
     width: 50%;
     margin-bottom: 2em;
     display: flex;
@@ -102,7 +103,7 @@ body{
 	text-align: center;
 }
 
-#site #content button, #site #content input:last-child{
+#site #content button{
 	background: #4d657c;
 	background-image: -webkit-linear-gradient(top, #4d657c, #4d657c);
 	background-image: -moz-linear-gradient(top, #4d657c, #4d657c);
@@ -128,18 +129,36 @@ body{
 
 #site #content .ej{
 	display: none;
+	background-color: #e8e1c9;
+	border-radius: 10px;
+	padding: 0.5em;
 }
 
 #site #content #ant{
-	width: 15%;
+	font-size: 5em;
+	font-weight: bold;
+	text-decoration: none;
+	margin-top: 2em;
+	width: 50%;
 	display: inline-block;
+	text-align: left;
+	color: #4d657c;
 }
 
 #site #content #next{
+	font-size: 5em;
+	font-weight: bold;
+	text-decoration: none;
 	margin-top: 2em;
+	width: 50%;
 	margin-left: 5em;
-	width: 15%;
 	display: inline-block;
+	text-align: right;
+	color: #4d657c;
+}
+
+#change{
+	display: flex;
 }
 
 .menu-l {
