@@ -24,16 +24,16 @@
 	</div>
 	<div class="subtitle" id="s2">
 		<div class="s">
-			<a href="http://www.sedolanton.com/tema2/tema2-1.php" id="s2.1" >2.1. Eigenvalores y eigenvectores</a>
+			<a href="http://www.sedolanton.com/tema2/tema2-2.php" id="s2.1" >2.1. Valores propios y vectores propios</a>
 		</div>
 		<div class="s" id="s2.2">
-			<a href="http://www.sedolanton.com/tema2/tema2-2.php">2.2. Reales distintos</a>
+			<a href="http://www.sedolanton.com/tema2/tema2-3.php">2.2. Reales distintos</a>
 		</div>
 		<div class="s" id="s2.3">
-			<a href="http://www.sedolanton.com/tema2/tema2-3.php">2.3. Complejos</a>
+			<a href="http://www.sedolanton.com/tema2/tema2-4.php">2.3. Complejos</a>
 		</div>
 		<div class="s" id="s2.4">
-			<a href="http://www.sedolanton.com/tema2/tema2-4.php">2.4. Con multiplicidad</a>
+			<a href="http://www.sedolanton.com/tema2/tema2-5.php">2.4. Reales repetidos</a>
 		</div>
 	</div>
 	<div class="title">

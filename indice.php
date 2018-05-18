@@ -82,7 +82,7 @@
 							</div>
 						</div>
 						<div class="s" id="s2.4">
-							<a href="tema2/tema2-5.php">2.4. Reales con multiplicidad</a>
+							<a href="tema2/tema2-5.php">2.4. Reales repetidos</a>
 							<div class="ss" id="2ss4">
 
 							</div>
