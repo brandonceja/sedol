@@ -16,15 +16,16 @@
             <h2>1.1. Definiciones preliminares</h2>
              <a id="page--id--1-1-1"></a>
             <h3>1.1.1. Sistema de primer orden</h3>
-            <p>Dado un sistema de $n$ ecuaciones de primer orden tal como</p><span>
+            <p>Dado un sistema de $n$ ecuaciones de primer orden tal como</p>
             $$\begin{aligned}
             \frac{dx_1}{dt}&amp;= g_1(t, x_1, x_2, \cdots, x_n)\\
             \frac{dx_2}{dt}&amp;= g_2(t, x_1, x_2, \cdots, x_n)\\
             &amp;\hspace{4em} \vdots \\
-            \frac{dx_n}{dt}&amp;= g_n(t, x_1, x_2, \cdots, x_n)\end{aligned}$$</span><br /> se denomina sistema de primer orden.</p>
+            \frac{dx_n}{dt}&amp;= g_n(t, x_1, x_2, \cdots, x_n)\end{aligned}$$
+            <p> se denomina sistema de primer orden.</p>
             <button class="mybtn" id="btn-ej1">EJEMPLO</button>
             <div id="ej1" class="ej">
-               <p>Este es un sistema de <span>3</span> ecuaciones de <strong>primer orden</strong> <br /><span>
+               <p>Este es un sistema de 3 ecuaciones de <strong>primer orden</strong></p>
                $$\begin{aligned}
                \frac{dx_1}{dt}= g_1(t, x_1, x_2, x_3)&amp;=t x_1 x_2 x_3\\
                \frac{dx_2}{dt}= g_2(t, x_1, x_2, x_3)&amp;=t+ x_1+ x_2+ x_3\\
@@ -37,7 +38,8 @@
             \frac{dx_1}{dt}&amp;=a_{11}(t)x_1+a_{12}(t)x_2+\cdots+a_{1n}(t)x_n+f_1(t)\\
             \frac{dx_2}{dt}&amp;=a_{21}(t)x_1+a_{22}(t)x_2+\cdots+a_{2n}(t)x_n+f_2(t)\\
             &amp;\hspace{8em} \vdots \\
-            \frac{dx_n}{dt}&amp;=a_{n1}(t)x_1+a_{n2}(t)x_2+\cdots+a_{nn}(t)x_n+f_n(t)\end{aligned}$$</span><br />A un sistema de este tipo se le llama <i>sistema lineal de ecuaciones diferenciales</i>.</p>
+            \frac{dx_n}{dt}&amp;=a_{n1}(t)x_1+a_{n2}(t)x_2+\cdots+a_{nn}(t)x_n+f_n(t)\end{aligned}$$</span><br />
+            <p>A un sistema de este tipo se le llama <i>sistema lineal de ecuaciones diferenciales</i>.</p>
             <button  class="mybtn" id="btn-ej2">EJEMPLO</button>
             <div id="ej2" class="ej">
                <p>A continuación  cada una de las funciones $g_1, g_2, \dots, g_n$ es lineal sobre $x_1, x_2, \dots, x_n$ es decir,  el  máximo grado solo de las $x_i$ es uno. No hay expresiones del tipo $x_2^5$ o $\sin(x_1+x_2)$, las funciones $f_i(t)$ y $a_{ij}(t)$ pueden son no ser lineales.

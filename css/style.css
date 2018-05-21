@@ -314,12 +314,6 @@ body{
 	visibility: hidden;
 }
 
-@media screen and (max-width: 1100px){
-	#navbar a{
-		font-size: 1em;
-	}
-}
-
 table tr th, table tr td{
 	border: solid 1px #4d657c;
 	text-align: center;
@@ -334,4 +328,20 @@ table{
 
 option{
 	margin: 2em;
+}
+
+p{
+	font-size: 1.2em;
+}
+
+@media screen and (max-width: 1100px){
+	#navbar a{
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 1500px){
+	.special-table{
+		font-size: 0.7em;
+	}
 }

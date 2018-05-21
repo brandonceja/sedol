@@ -493,61 +493,81 @@ P.show(frame=True,axes_labels=['$x(t)$','$y(t)$'] , xmax = ejes, xmin = -ejes, y
         x'(t) &= -5x+3y   &  x'(t) &= -x-y    & x'(t) &= -x-2y    &  x'(t) &= 10x-\frac{9}{2}y\\
         y'(t) &= -3x+5y   &  y'(t) &= -2x-2y    & y'(t) &=\ \ -3y   &  y'(t) &=12x-5y
         \end{align*} <br><br>
-\begin{align*}
-&\lambda_1=-3&      &\lambda_1=-3&      &\lambda_1=-4&      &\lambda_1=3&     &\lambda_1=1
-\\  
-&\lambda_2=-1&      &\lambda_2=0&     &\lambda_2=4&     &\lambda_2=4&     &\lambda_2=4  
-\\
-&\mathbf{v_1}=
-\begin{bmatrix}
-1\\ 
-1  \end{bmatrix}&
-            &\mathbf{v_1}=
+<center>
+<table class="relation-exercise">
+  <tr>
+    <td>
+      $\lambda_1=-3$ <br>
+      $\lambda_2=-1$ <br>
+      $\mathbf{v_1}=
+        \begin{bmatrix}
+        1\\ 
+        1  \end{bmatrix}$ <br>
+      $\mathbf{v_2}=
+      \begin{bmatrix}
+      1\\
+      0  \end{bmatrix}$
+    </td>
+    <td>
+       $\lambda_1=-3$ <br>
+       $ \lambda_2=0 $ <br>
+       $\mathbf{v_1}=
             \begin{bmatrix}
             1\\
-            2  \end{bmatrix}&
-                        &\mathbf{v_1}=
-                        \begin{bmatrix}
-                        3\\
-                        1  \end{bmatrix}&
-                                    &\mathbf{v_1}=
-                                    \begin{bmatrix}
-                                    3\\
-                                    4  \end{bmatrix}&
-                                                  &\mathbf{v_1}=
-                                                \begin{bmatrix}
-                                                  1\\
-                                                  2  \end{bmatrix}
-\\
-&\mathbf{v_2}=
-\begin{bmatrix}
-1\\
-0  \end{bmatrix}&
-            &\mathbf{v_2}=
+            2  \end{bmatrix}$ <br>
+       $\mathbf{v_2}=
             \begin{bmatrix}
             1\\
-            -1  \end{bmatrix}&
-                        &\mathbf{v_2}=
+            -1  \end{bmatrix}$
+    </td>
+    <td>
+      $\lambda_1=-4$ <br>
+      $\lambda_2=4$ <br>
+      $\mathbf{v_1}=
+      \begin{bmatrix}
+      3\\
+      1  \end{bmatrix}$<br>
+      $\mathbf{v_2}=
                         \begin{bmatrix}
                         1\\
-                        3  \end{bmatrix}&
-                                      &\mathbf{v_2}=
+                        3  \end{bmatrix}$<br>
+    </td>
+    <td>
+      $\lambda_1=3$<br>
+      $\lambda_2=4$<br>
+      $\mathbf{v_1}=
+                                    \begin{bmatrix}
+                                    3\\
+                                    4  \end{bmatrix}$<br>
+      $\mathbf{v_2}=
                                       \begin{bmatrix}
                                       2\\
-                                      4  \end{bmatrix}&
-                                                  &\mathbf{v_2}=
+                                      4  \end{bmatrix}$
+    </td>
+    <td>
+      $\lambda_1=1$ <br>
+      $\lambda_2=4 $ <br>
+      $\mathbf{v_1}=
+                                                \begin{bmatrix}
+                                                  1\\
+                                                  2  \end{bmatrix}$ <br>
+      $\mathbf{v_2}=
                                                 \begin{bmatrix}
                                                   3\\
-                                                  4  \end{bmatrix}
-\end{align*}
-<center>
-  <select name="one" id="o1">
+                                                  4  \end{bmatrix}$
+    </td>
+</tr>
+<tr>
+  <td>
+ <select name="one" id="o1">
     <option value="A">A</option>
     <option value="B">B</option>
     <option value="C">C</option>
     <option value="D">D</option>
     <option value="none">Ninguno</option>
   </select>
+</td>
+<td>
   <select name="two" id="o2">
     <option value="A">A</option>
     <option value="B">B</option>
@@ -555,6 +575,8 @@ P.show(frame=True,axes_labels=['$x(t)$','$y(t)$'] , xmax = ejes, xmin = -ejes, y
     <option value="D">D</option>
     <option value="none">Ninguno</option>
   </select>
+  </td>
+  <td>
   <select name="three" id="o3">
     <option value="A">A</option>
     <option value="B">B</option>
@@ -562,6 +584,8 @@ P.show(frame=True,axes_labels=['$x(t)$','$y(t)$'] , xmax = ejes, xmin = -ejes, y
     <option value="D">D</option>
     <option value="none">Ninguno</option>
   </select>
+  </td>
+  <td>
   <select name="four" id="o4">
     <option value="A">A</option>
     <option value="B">B</option>
@@ -569,6 +593,8 @@ P.show(frame=True,axes_labels=['$x(t)$','$y(t)$'] , xmax = ejes, xmin = -ejes, y
     <option value="D">D</option>
     <option value="none">Ninguno</option>
   </select>
+  </td>
+  <td>
   <select name="five" id="o5">
     <option value="A">A</option>
     <option value="B">B</option>
@@ -576,6 +602,9 @@ P.show(frame=True,axes_labels=['$x(t)$','$y(t)$'] , xmax = ejes, xmin = -ejes, y
     <option value="D">D</option>
     <option value="none">Ninguno</option>
   </select><br><br>
+  </td>
+  </tr>
+</table>
 </center>
 <button id="ans">Revisar</button>
 <center>

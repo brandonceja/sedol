@@ -503,89 +503,116 @@ P.show(frame=True,axes_labels=['$x(t)$','$y(t)$'] , xmax = ejes, xmin = -ejes, y
             x'(t) &=  3x-3y     &  x'(t) &= -4x -y    &  x'(t) &= 3x-10y          & x'(t) &= x+5y     \\
             y'(t) &=\frac{10}{3}x-3y      &y'(t) &=  5x-6y    &  y'(t) &= \frac{2}{5}x+3y     & y'(t) &=-2x+3y    
             \end{align*}
-            \begin{align*}
-&\lambda_1=-5-2i&     &\lambda_1=3-2i&      &\lambda_1=2-3i&      &\lambda_1=-i&      &\lambda_1=5+3i
-\\  
-&\lambda_2=-5+2i&     &\lambda_2=3+2i&      &\lambda_2=2+3i&      &\lambda_2=i&     &\lambda_2=5-3i 
-\\
-&\mathbf{v_1}=
+<center>
+            <table>
+              <tr>
+                <td>
+                  $\lambda_1=-5-2i$ <br>
+                  $\lambda_2=-5+2i$<br>
+                  $\mathbf{v_1}=
 \begin{bmatrix}
 1\\ 
-1+2i  \end{bmatrix}&
-              &\mathbf{v_1}=
+1+2i  \end{bmatrix}$<br>
+$\mathbf{v_2}=
+\begin{bmatrix}
+1\\ 
+1-2i  \end{bmatrix}$<br>
+                </td>
+                <td>
+                  $\lambda_1=3-2i$<br>
+                  $\lambda_2=3+2i$<br>
+                  $\mathbf{v_1}=
               \begin{bmatrix}
               1\\
-              \frac{i}{5}\end{bmatrix}&
-                          &\mathbf{v_1}=
-                          \begin{bmatrix}
-                          1\\
-                          \frac{1}{5}-\frac{3}{5}i  \end{bmatrix}&
-                                      &\mathbf{v_1}=
-                                      \begin{bmatrix}
-                                      3\\
-                                      3+i  \end{bmatrix}&
-                                                  &\mathbf{v_1}=
-                                                  \begin{bmatrix}
-                                                  1\\
-                                                  5-2i  \end{bmatrix}
-                                                  \\
-&\mathbf{v_2}=
-\begin{bmatrix}
-1\\ 
-1-2i  \end{bmatrix}&
-            &\mathbf{v_2}=
+              \frac{i}{5}\end{bmatrix}$<br>
+                  $\mathbf{v_2}=
             \begin{bmatrix}
             1\\
-            -\frac{i}{5}  \end{bmatrix}&
-                        &\mathbf{v_2}=
+            -\frac{i}{5}  \end{bmatrix}$<br>
+                </td>
+                <td>
+                   $\lambda_1=2-3i$<br>
+                  $\lambda_2=2+3i$<br>
+                  $\mathbf{v_1}=
+                          \begin{bmatrix}
+                          1\\
+                          \frac{1}{5}-\frac{3}{5}i  \end{bmatrix}$<br>
+                  $\mathbf{v_2}=
                         \begin{bmatrix}
                         2\\
-                        \frac{1}{5}+\frac{3}{5}i    \end{bmatrix}&
-                                    &\mathbf{v_2}=
+                        \frac{1}{5}+\frac{3}{5}i    \end{bmatrix}$<br>
+                </td>
+                <td>
+                   $\lambda_1=-i$<br>
+                  $\lambda_2=i$<br>
+                  $\mathbf{v_1}=
+                                      \begin{bmatrix}
+                                      3\\
+                                      3+i  \end{bmatrix}$<br>
+                  $\mathbf{v_2}=
                                     \begin{bmatrix}
                                     3\\
-                                    3-i  \end{bmatrix}&
-                                                  &\mathbf{v_2}=
+                                    3-i  \end{bmatrix}$<br>
+                </td>
+                <td>
+                   $\lambda_1=5+3i$<br>
+                  $\lambda_2=5-3i $<br>
+                  $\mathbf{v_1}=
                                                   \begin{bmatrix}
                                                   1\\
-                                                  5-2i \end{bmatrix}
-\end{align*}
-            <center>
-              <select name="one" id="o1">
+                                                  5-2i  \end{bmatrix}$<br>
+                  $\mathbf{v_2}=
+                                                  \begin{bmatrix}
+                                                  1\\
+                                                  5-2i \end{bmatrix}$<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <select name="one" id="o1">
                 <option value="A">A</option>
                 <option value="B">B</option>
                 <option value="C">C</option>
                 <option value="D">D</option>
                 <option value="none">Ninguno</option>
               </select>&emsp;&emsp;
-              <select name="two" id="o2">
+                </td>
+                <td>
+                   <select name="two" id="o2">
                 <option value="A">A</option>
                 <option value="B">B</option>
                 <option value="C">C</option>
                 <option value="D">D</option>
                 <option value="none">Ninguno</option>
               </select>&emsp;&emsp;
-              <select name="three" id="o3">
+                </td>
+                <td><select name="three" id="o3">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="none">Ninguno</option>
+              </select>&emsp;&emsp;</td>
+                <td>
+                  <select name="four" id="o4">
                 <option value="A">A</option>
                 <option value="B">B</option>
                 <option value="C">C</option>
                 <option value="D">D</option>
                 <option value="none">Ninguno</option>
               </select>&emsp;&emsp;
-              <select name="four" id="o4">
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-                <option value="none">Ninguno</option>
-              </select>&emsp;&emsp;
-              <select name="five" id="o5">
+            </td>
+                <td>
+                  <select name="five" id="o5">
                 <option value="A">A</option>
                 <option value="B">B</option>
                 <option value="C">C</option>
                 <option value="D">D</option>
                 <option value="none">Ninguno</option>
               </select><br><br>
+                </td>
+              </tr>
+            </table>
             </center>
             <button id="ans">Revisar</button>
             <center>

@@ -848,67 +848,94 @@ P.show(frame=True,axes_labels=['$x(t)$','$y(t)$'] , xmax = ejes, xmin = -ejes, y
           x'(t) &=  -5x+4y            &  x'(t) &= 7x -y   &  x'(t) &=  x-3y     & x'(t) &= 5x     \\
           y'(t) &=\ \ \ \ \ \  -5y      &y'(t) &= 4x+3y   &  y'(t) &= 3x+7y     & y'(t) &=\ \ \ 5y    
           \end{align*}
-          \begin{align*}
-          &\lambda=4&       &\lambda=-5&        &\lambda=5&       &\lambda=4&       &\lambda=5
-          \\  
-          &\mathbf{v}=
+          <center>
+            <table>
+              <tr>
+                <td>
+                  $\lambda=4$ <br>
+                  $\mathbf{v}=
           \begin{bmatrix}
           1\\ 
-          -1\end{bmatrix}&
-          &\mathbf{v}=
+          -1\end{bmatrix}$
+                </td>
+                <td>
+                  $\lambda=-5$<br>
+                  $\mathbf{v}=
           \begin{bmatrix}
           1\\
-          0\end{bmatrix}&
-          &\mathbf{v}=
+          0\end{bmatrix}$
+                </td>
+                <td>
+                  $\lambda=5$<br>
+                  $\mathbf{v}=
           \begin{bmatrix}
           1\\
-          2\end{bmatrix}&
-          &\mathbf{v}=
+          2\end{bmatrix}$
+                </td>
+                <td>
+                  $\lambda=4$<br>
+                  $\mathbf{v}=
           \begin{bmatrix}
           2\\
-          1  \end{bmatrix}&
-          &\mathbf{v}=
+          1  \end{bmatrix}$
+                </td>
+                <td>
+                  $\lambda=5$<br>
+                  $\mathbf{v}=
           \begin{bmatrix}
           1\\
-          0  \end{bmatrix}
-          \end{align*}
-          <center>
-              <select name="one" id="o1">
+          0  \end{bmatrix}$
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <select name="one" id="o1">
                 <option value="A">A</option>
                 <option value="B">B</option>
                 <option value="C">C</option>
                 <option value="D">D</option>
                 <option value="none">Ninguno</option>
-              </select>&emsp;&emsp;
-              <select name="two" id="o2">
+              </select>
+                </td>
+                <td>
+                  <select name="two" id="o2">
                 <option value="A">A</option>
                 <option value="B">B</option>
                 <option value="C">C</option>
                 <option value="D">D</option>
                 <option value="none">Ninguno</option>
-              </select>&emsp;&emsp;
-              <select name="three" id="o3">
+              </select>
+                </td>
+                <td>
+                   <select name="three" id="o3">
                 <option value="A">A</option>
                 <option value="B">B</option>
                 <option value="C">C</option>
                 <option value="D">D</option>
                 <option value="none">Ninguno</option>
-              </select>&emsp;&emsp;
-              <select name="four" id="o4">
+              </select>
+                </td>
+                <td>
+                  <select name="four" id="o4">
                 <option value="A">A</option>
                 <option value="B">B</option>
                 <option value="C">C</option>
                 <option value="D">D</option>
                 <option value="none">Ninguno</option>
-              </select>&emsp;&emsp;
-              <select name="five" id="o5">
+              </select>
+                </td>
+                <td>
+                  <select name="five" id="o5">
                 <option value="A">A</option>
                 <option value="B">B</option>
                 <option value="C">C</option>
                 <option value="D">D</option>
                 <option value="none">Ninguno</option>
-              </select><br><br>
-            </center>
+              </select>
+                </td>
+              </tr>
+            </table>
+          </center>
             <button id="ans">Revisar</button>
             <center>
                   <h2 id="ansi"></h2>

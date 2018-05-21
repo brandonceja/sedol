@@ -94,7 +94,7 @@
             <p><strong>CASO 2: </strong>Soluciones complejas conjugadas.</p>
             <p><strong>CASO 3: </strong>Una solución real repetida. </p>
             <p>Debido a que los valores propios se dividen en estos casos,  la obtención de la solución general de sistema de ecuaciones diferenciales también se tratara en forma se parada para cada uno de los  tipos de valores propios que podamos obtener, esto se vera mas adelante, por ahora solo ejemplifiquemos el cálculo de  valores propios considerando las siguientes matrices $\mathbf{A}$ de coeficientes, realicemos las operaciones simultáneamente para obtener sus respectivos valores propios:</p>
-            <table>
+            <table class="special-table">
               <tr>
                 <th>$\mathbf{A}$</th>
                 <th>
