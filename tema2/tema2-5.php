@@ -1008,7 +1008,10 @@ P.show(frame=True,axes_labels=['$x(t)$','$y(t)$'] , xmax = ejes, xmin = -ejes, y
               </ul>
             </li>
           </ol> 
-          <a href="tema2-4.php" id="ant">&#8249;</a>
+          <div id="change">
+              <a href="tema2-4.php" id="ant">&#8249;</a>
+              <a href="tema2-6.php" id="next">&#8250;</a>
+            </div>
           </div>
    </center>
    <script>

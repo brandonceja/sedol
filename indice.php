@@ -87,9 +87,15 @@
 
 							</div>
 						</div>
+						<div class="s" id="s2.5">
+							<a href="tema2/tema2-6.php">2.5. Ejercicios</a>
+							<div class="ss" id="2ss4">
+
+							</div>
+						</div>
 					</div>
 					<div class="title">
-						<h3>3. Método nxn</h3>
+						<h3><a href="tema3/tema3-1.php">3. Método nxn</a></h3>
 					</div>
 					<div class="subtitle">
 							
