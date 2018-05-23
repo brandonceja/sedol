@@ -82,7 +82,7 @@
 							</div>
 						</div>
 						<div class="s" id="s2.4">
-							<a href="tema2/tema2-5.php">2.4. Reales repetidos</a>
+							<a href="tema2/tema2-5.php">2.4. Reales repetidos</a><br><br>
 							<div class="ss" id="2ss4">
 
 							</div>

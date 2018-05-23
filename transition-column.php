@@ -35,6 +35,9 @@
 		<div class="s" id="s2.4">
 			<a href="http://www.sedolanton.com/tema2/tema2-5.php">2.4. Reales repetidos</a>
 		</div>
+		<div class="s" id="s2.5">
+			<a href="http://www.sedolanton.com/tema2/tema2-6.php">2.5. Ejercicios</a>
+		</div>
 	</div>
 	<div class="title">
 		<h3><a href="http://www.sedolanton.com/tema3/tema3-1.php">3. Método nxn</a></h3>
