@@ -1,7 +1,7 @@
 <input type="checkbox" class="checkbox" id="check">
 <label class="menu-l" for="check">|||</label>
 <div id="transition-column">
-	<center><h2>Título del curso</h2></center>
+	<center><h2>Sistemas de ecuaciones diferenciales</h2></center>
 	<div class="title" id="t1">
 		<h3>1. Teoría básica</h3>
 	</div>

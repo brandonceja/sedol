@@ -1,5 +1,5 @@
 <div>
-	<h1 id="main-title">Título del Curso</h1>
+	<h1 id="main-title">Sistemas de ecuaciones diferenciales</h1>
 </div>
 <div id="navbar">
 	<div><a href="http://www.sedolanton.com/index.php">Contenido</a></div>
